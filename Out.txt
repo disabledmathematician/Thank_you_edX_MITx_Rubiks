@@ -1,0 +1,1017 @@
+[]
+deque([<__main__.RubiksState object at 0x75f17be110>, <__main__.RubiksState object at 0x75f17be510>, <__main__.RubiksState object at 0x75f17be910>, <__main__.RubiksState object at 0x75f17bed10>, <__main__.RubiksState object at 0x75f17bf110>, <__main__.RubiksState object at 0x75f17bf510>])
+Charles Truscott Watters. My Rubik's cube solution Python algorithm.
+<__main__.RubiksState object at 0x75f17bf950> ['L', 'L']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['B', 'B', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['G', 'B', 'G', 'B'] Top Face: ['Y', 'W', 'Y', 'W'] Down Face: ['W', 'Y', 'W', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['B', 'B', 'G', 'G'] ['R', 'R', 'R', 'R'] ['G', 'B', 'G', 'B'] ['Y', 'W', 'Y', 'W'] ['W', 'Y', 'W', 'Y']
+<__main__.RubiksState object at 0x75f17bfd90> ['L', 'R']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['W', 'W', 'W', 'W'] ['R', 'R', 'R', 'R'] ['Y', 'Y', 'Y', 'Y'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f17cc210> ['L', 'U']
+Left Face: ['G', 'W', 'O', 'O'] Front Face: ['R', 'W', 'R', 'G'] Right Face: ['B', 'Y', 'R', 'R'] Back Face: ['O', 'O', 'Y', 'B'] Top Face: ['B', 'B', 'W', 'W'] Down Face: ['G', 'Y', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'W', 'O', 'O'] ['R', 'W', 'R', 'G'] ['B', 'Y', 'R', 'R'] ['O', 'O', 'Y', 'B'] ['B', 'B', 'W', 'W'] ['G', 'Y', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17cc650> ['L', 'D']
+Left Face: ['O', 'O', 'W', 'G'] Front Face: ['W', 'R', 'G', 'R'] Right Face: ['R', 'R', 'B', 'Y'] Back Face: ['Y', 'B', 'O', 'O'] Top Face: ['B', 'W', 'B', 'W'] Down Face: ['G', 'G', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'W', 'G'] ['W', 'R', 'G', 'R'] ['R', 'R', 'B', 'Y'] ['Y', 'B', 'O', 'O'] ['B', 'W', 'B', 'W'] ['G', 'G', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17cca90> ['L', 'F']
+Left Face: ['G', 'O', 'O', 'Y'] Front Face: ['W', 'G', 'W', 'G'] Right Face: ['B', 'R', 'W', 'R'] Back Face: ['Y', 'B', 'Y', 'B'] Top Face: ['B', 'W', 'O', 'O'] Down Face: ['G', 'Y', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'O', 'Y'] ['W', 'G', 'W', 'G'] ['B', 'R', 'W', 'R'] ['Y', 'B', 'Y', 'B'] ['B', 'W', 'O', 'O'] ['G', 'Y', 'R', 'R']
+<__main__.RubiksState object at 0x75f17cced0> ['L', 'B']
+Left Face: ['O', 'G', 'Y', 'O'] Front Face: ['W', 'W', 'G', 'G'] Right Face: ['R', 'B', 'R', 'W'] Back Face: ['Y', 'Y', 'B', 'B'] Top Face: ['O', 'O', 'B', 'W'] Down Face: ['R', 'R', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'Y', 'O'] ['W', 'W', 'G', 'G'] ['R', 'B', 'R', 'W'] ['Y', 'Y', 'B', 'B'] ['O', 'O', 'B', 'W'] ['R', 'R', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17cd0d0> ['R', 'L']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['W', 'W', 'W', 'W'] ['R', 'R', 'R', 'R'] ['Y', 'Y', 'Y', 'Y'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f17cd350> ['R', 'R']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['G', 'G', 'B', 'B'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['B', 'G', 'B', 'G'] Top Face: ['W', 'Y', 'W', 'Y'] Down Face: ['Y', 'W', 'Y', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['G', 'G', 'B', 'B'] ['R', 'R', 'R', 'R'] ['B', 'G', 'B', 'G'] ['W', 'Y', 'W', 'Y'] ['Y', 'W', 'Y', 'W']
+<__main__.RubiksState object at 0x75f17cd790> ['R', 'U']
+Left Face: ['W', 'G', 'O', 'O'] Front Face: ['R', 'G', 'R', 'W'] Right Face: ['Y', 'B', 'R', 'R'] Back Face: ['O', 'O', 'B', 'Y'] Top Face: ['W', 'W', 'B', 'B'] Down Face: ['Y', 'G', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'G', 'O', 'O'] ['R', 'G', 'R', 'W'] ['Y', 'B', 'R', 'R'] ['O', 'O', 'B', 'Y'] ['W', 'W', 'B', 'B'] ['Y', 'G', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17cdbd0> ['R', 'D']
+Left Face: ['O', 'O', 'G', 'W'] Front Face: ['G', 'R', 'W', 'R'] Right Face: ['R', 'R', 'Y', 'B'] Back Face: ['B', 'Y', 'O', 'O'] Top Face: ['W', 'B', 'W', 'B'] Down Face: ['Y', 'Y', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'G', 'W'] ['G', 'R', 'W', 'R'] ['R', 'R', 'Y', 'B'] ['B', 'Y', 'O', 'O'] ['W', 'B', 'W', 'B'] ['Y', 'Y', 'G', 'G']
+<__main__.RubiksState object at 0x75f17ce010> ['R', 'F']
+Left Face: ['Y', 'O', 'O', 'G'] Front Face: ['G', 'W', 'G', 'W'] Right Face: ['W', 'R', 'B', 'R'] Back Face: ['B', 'Y', 'B', 'Y'] Top Face: ['W', 'B', 'O', 'O'] Down Face: ['Y', 'G', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'O', 'G'] ['G', 'W', 'G', 'W'] ['W', 'R', 'B', 'R'] ['B', 'Y', 'B', 'Y'] ['W', 'B', 'O', 'O'] ['Y', 'G', 'R', 'R']
+<__main__.RubiksState object at 0x75f179e350> ['R', 'B']
+Left Face: ['O', 'Y', 'G', 'O'] Front Face: ['G', 'G', 'W', 'W'] Right Face: ['R', 'W', 'R', 'B'] Back Face: ['B', 'B', 'Y', 'Y'] Top Face: ['O', 'O', 'W', 'B'] Down Face: ['R', 'R', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'G', 'O'] ['G', 'G', 'W', 'W'] ['R', 'W', 'R', 'B'] ['B', 'B', 'Y', 'Y'] ['O', 'O', 'W', 'B'] ['R', 'R', 'Y', 'G']
+<__main__.RubiksState object at 0x75f179e250> ['U', 'L']
+Left Face: ['G', 'O', 'O', 'G'] Front Face: ['W', 'W', 'R', 'G'] Right Face: ['B', 'B', 'R', 'R'] Back Face: ['Y', 'O', 'Y', 'B'] Top Face: ['B', 'W', 'O', 'W'] Down Face: ['G', 'Y', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'O', 'G'] ['W', 'W', 'R', 'G'] ['B', 'B', 'R', 'R'] ['Y', 'O', 'Y', 'B'] ['B', 'W', 'O', 'W'] ['G', 'Y', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17ce390> ['U', 'R']
+Left Face: ['G', 'G', 'O', 'O'] Front Face: ['R', 'G', 'W', 'W'] Right Face: ['B', 'R', 'B', 'R'] Back Face: ['O', 'Y', 'B', 'Y'] Top Face: ['W', 'B', 'W', 'O'] Down Face: ['Y', 'G', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'O', 'O'] ['R', 'G', 'W', 'W'] ['B', 'R', 'B', 'R'] ['O', 'Y', 'B', 'Y'] ['W', 'B', 'W', 'O'] ['Y', 'G', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17ce7d0> ['U', 'U']
+Left Face: ['R', 'R', 'O', 'O'] Front Face: ['B', 'G', 'B', 'G'] Right Face: ['O', 'O', 'R', 'R'] Back Face: ['G', 'G', 'B', 'B'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'R', 'O', 'O'] ['B', 'G', 'B', 'G'] ['O', 'O', 'R', 'R'] ['G', 'G', 'B', 'B'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17cec10> ['U', 'D']
+Left Face: ['G', 'G', 'G', 'G'] Front Face: ['R', 'R', 'R', 'R'] Right Face: ['B', 'B', 'B', 'B'] Back Face: ['O', 'O', 'O', 'O'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'G'] ['R', 'R', 'R', 'R'] ['B', 'B', 'B', 'B'] ['O', 'O', 'O', 'O'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17cf050> ['U', 'F']
+Left Face: ['Y', 'G', 'O', 'Y'] Front Face: ['G', 'G', 'R', 'R'] Right Face: ['W', 'B', 'W', 'R'] Back Face: ['O', 'O', 'B', 'B'] Top Face: ['W', 'W', 'O', 'G'] Down Face: ['Y', 'Y', 'R', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'O', 'Y'] ['G', 'G', 'R', 'R'] ['W', 'B', 'W', 'R'] ['O', 'O', 'B', 'B'] ['W', 'W', 'O', 'G'] ['Y', 'Y', 'R', 'B']
+<__main__.RubiksState object at 0x75f17cf490> ['U', 'B']
+Left Face: ['G', 'Y', 'Y', 'O'] Front Face: ['R', 'G', 'R', 'G'] Right Face: ['B', 'W', 'R', 'W'] Back Face: ['B', 'O', 'B', 'O'] Top Face: ['O', 'G', 'W', 'W'] Down Face: ['R', 'B', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'Y', 'Y', 'O'] ['R', 'G', 'R', 'G'] ['B', 'W', 'R', 'W'] ['B', 'O', 'B', 'O'] ['O', 'G', 'W', 'W'] ['R', 'B', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17cf690> ['D', 'L']
+Left Face: ['O', 'G', 'G', 'O'] Front Face: ['W', 'W', 'G', 'R'] Right Face: ['R', 'R', 'B', 'B'] Back Face: ['Y', 'B', 'Y', 'O'] Top Face: ['O', 'W', 'B', 'W'] Down Face: ['R', 'Y', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'G', 'O'] ['W', 'W', 'G', 'R'] ['R', 'R', 'B', 'B'] ['Y', 'B', 'Y', 'O'] ['O', 'W', 'B', 'W'] ['R', 'Y', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17cf910> ['D', 'R']
+Left Face: ['O', 'O', 'G', 'G'] Front Face: ['G', 'R', 'W', 'W'] Right Face: ['R', 'B', 'R', 'B'] Back Face: ['B', 'Y', 'O', 'Y'] Top Face: ['W', 'O', 'W', 'B'] Down Face: ['Y', 'R', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'G', 'G'] ['G', 'R', 'W', 'W'] ['R', 'B', 'R', 'B'] ['B', 'Y', 'O', 'Y'] ['W', 'O', 'W', 'B'] ['Y', 'R', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17cfd50> ['D', 'U']
+Left Face: ['G', 'G', 'G', 'G'] Front Face: ['R', 'R', 'R', 'R'] Right Face: ['B', 'B', 'B', 'B'] Back Face: ['O', 'O', 'O', 'O'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'G'] ['R', 'R', 'R', 'R'] ['B', 'B', 'B', 'B'] ['O', 'O', 'O', 'O'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17d01d0> ['D', 'D']
+Left Face: ['O', 'O', 'R', 'R'] Front Face: ['G', 'B', 'G', 'B'] Right Face: ['R', 'R', 'O', 'O'] Back Face: ['B', 'B', 'G', 'G'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'R', 'R'] ['G', 'B', 'G', 'B'] ['R', 'R', 'O', 'O'] ['B', 'B', 'G', 'G'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17d0610> ['D', 'F']
+Left Face: ['Y', 'O', 'G', 'Y'] Front Face: ['R', 'R', 'G', 'G'] Right Face: ['W', 'R', 'W', 'B'] Back Face: ['B', 'B', 'O', 'O'] Top Face: ['W', 'W', 'G', 'O'] Down Face: ['Y', 'Y', 'B', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'G', 'Y'] ['R', 'R', 'G', 'G'] ['W', 'R', 'W', 'B'] ['B', 'B', 'O', 'O'] ['W', 'W', 'G', 'O'] ['Y', 'Y', 'B', 'R']
+<__main__.RubiksState object at 0x75f17d0a50> ['D', 'B']
+Left Face: ['O', 'Y', 'Y', 'G'] Front Face: ['G', 'R', 'G', 'R'] Right Face: ['R', 'W', 'B', 'W'] Back Face: ['O', 'B', 'O', 'B'] Top Face: ['G', 'O', 'W', 'W'] Down Face: ['B', 'R', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'Y', 'G'] ['G', 'R', 'G', 'R'] ['R', 'W', 'B', 'W'] ['O', 'B', 'O', 'B'] ['G', 'O', 'W', 'W'] ['B', 'R', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17d0c50> ['F', 'L']
+Left Face: ['O', 'O', 'Y', 'Y'] Front Face: ['W', 'O', 'G', 'G'] Right Face: ['W', 'R', 'W', 'R'] Back Face: ['Y', 'B', 'R', 'B'] Top Face: ['B', 'W', 'B', 'O'] Down Face: ['G', 'Y', 'G', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'Y', 'Y'] ['W', 'O', 'G', 'G'] ['W', 'R', 'W', 'R'] ['Y', 'B', 'R', 'B'] ['B', 'W', 'B', 'O'] ['G', 'Y', 'G', 'R']
+<__main__.RubiksState object at 0x75f17d0ed0> ['F', 'R']
+Left Face: ['Y', 'O', 'O', 'Y'] Front Face: ['G', 'G', 'W', 'O'] Right Face: ['R', 'R', 'W', 'W'] Back Face: ['B', 'Y', 'B', 'R'] Top Face: ['W', 'B', 'O', 'B'] Down Face: ['Y', 'G', 'R', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'O', 'Y'] ['G', 'G', 'W', 'O'] ['R', 'R', 'W', 'W'] ['B', 'Y', 'B', 'R'] ['W', 'B', 'O', 'B'] ['Y', 'G', 'R', 'G']
+<__main__.RubiksState object at 0x75f17d1310> ['F', 'U']
+Left Face: ['G', 'G', 'O', 'Y'] Front Face: ['W', 'G', 'R', 'G'] Right Face: ['B', 'B', 'W', 'R'] Back Face: ['Y', 'O', 'B', 'B'] Top Face: ['O', 'W', 'O', 'W'] Down Face: ['Y', 'Y', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'O', 'Y'] ['W', 'G', 'R', 'G'] ['B', 'B', 'W', 'R'] ['Y', 'O', 'B', 'B'] ['O', 'W', 'O', 'W'] ['Y', 'Y', 'R', 'R']
+<__main__.RubiksState object at 0x75f17d1750> ['F', 'D']
+Left Face: ['Y', 'O', 'G', 'G'] Front Face: ['G', 'W', 'G', 'R'] Right Face: ['W', 'R', 'B', 'B'] Back Face: ['B', 'B', 'Y', 'O'] Top Face: ['W', 'W', 'O', 'O'] Down Face: ['R', 'Y', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'G', 'G'] ['G', 'W', 'G', 'R'] ['W', 'R', 'B', 'B'] ['B', 'B', 'Y', 'O'] ['W', 'W', 'O', 'O'] ['R', 'Y', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17d1b90> ['F', 'F']
+Left Face: ['R', 'O', 'O', 'R'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['O', 'R', 'O', 'R'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['W', 'W', 'Y', 'Y'] Down Face: ['Y', 'Y', 'W', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'O', 'O', 'R'] ['G', 'G', 'G', 'G'] ['O', 'R', 'O', 'R'] ['B', 'B', 'B', 'B'] ['W', 'W', 'Y', 'Y'] ['Y', 'Y', 'W', 'W']
+<__main__.RubiksState object at 0x75f17d1fd0> ['F', 'B']
+Left Face: ['Y', 'Y', 'Y', 'Y'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['W', 'W', 'W', 'W'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['O', 'O', 'O', 'O'] Down Face: ['R', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'Y'] ['G', 'G', 'G', 'G'] ['W', 'W', 'W', 'W'] ['B', 'B', 'B', 'B'] ['O', 'O', 'O', 'O'] ['R', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f17d21d0> ['B', 'L']
+Left Face: ['Y', 'Y', 'O', 'O'] Front Face: ['O', 'W', 'G', 'G'] Right Face: ['R', 'W', 'R', 'W'] Back Face: ['R', 'B', 'Y', 'B'] Top Face: ['B', 'O', 'B', 'W'] Down Face: ['G', 'R', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'O', 'O'] ['O', 'W', 'G', 'G'] ['R', 'W', 'R', 'W'] ['R', 'B', 'Y', 'B'] ['B', 'O', 'B', 'W'] ['G', 'R', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17d2450> ['B', 'R']
+Left Face: ['O', 'Y', 'Y', 'O'] Front Face: ['G', 'G', 'O', 'W'] Right Face: ['W', 'W', 'R', 'R'] Back Face: ['B', 'R', 'B', 'Y'] Top Face: ['O', 'B', 'W', 'B'] Down Face: ['R', 'G', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'Y', 'O'] ['G', 'G', 'O', 'W'] ['W', 'W', 'R', 'R'] ['B', 'R', 'B', 'Y'] ['O', 'B', 'W', 'B'] ['R', 'G', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17d2890> ['B', 'U']
+Left Face: ['G', 'G', 'Y', 'O'] Front Face: ['R', 'G', 'W', 'G'] Right Face: ['B', 'B', 'R', 'W'] Back Face: ['O', 'Y', 'B', 'B'] Top Face: ['W', 'O', 'W', 'O'] Down Face: ['R', 'R', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'Y', 'O'] ['R', 'G', 'W', 'G'] ['B', 'B', 'R', 'W'] ['O', 'Y', 'B', 'B'] ['W', 'O', 'W', 'O'] ['R', 'R', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17d2cd0> ['B', 'D']
+Left Face: ['O', 'Y', 'G', 'G'] Front Face: ['G', 'R', 'G', 'W'] Right Face: ['R', 'W', 'B', 'B'] Back Face: ['B', 'B', 'O', 'Y'] Top Face: ['O', 'O', 'W', 'W'] Down Face: ['Y', 'R', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'G', 'G'] ['G', 'R', 'G', 'W'] ['R', 'W', 'B', 'B'] ['B', 'B', 'O', 'Y'] ['O', 'O', 'W', 'W'] ['Y', 'R', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17d3110> ['B', 'F']
+Left Face: ['Y', 'Y', 'Y', 'Y'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['W', 'W', 'W', 'W'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['O', 'O', 'O', 'O'] Down Face: ['R', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'Y'] ['G', 'G', 'G', 'G'] ['W', 'W', 'W', 'W'] ['B', 'B', 'B', 'B'] ['O', 'O', 'O', 'O'] ['R', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f17d3550> ['B', 'B']
+Left Face: ['O', 'R', 'R', 'O'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['R', 'O', 'R', 'O'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['Y', 'Y', 'W', 'W'] Down Face: ['W', 'W', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'R', 'R', 'O'] ['G', 'G', 'G', 'G'] ['R', 'O', 'R', 'O'] ['B', 'B', 'B', 'B'] ['Y', 'Y', 'W', 'W'] ['W', 'W', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17d3990> ['L', 'L', 'L']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['Y', 'Y', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['W', 'B', 'W', 'B'] Top Face: ['G', 'W', 'G', 'W'] Down Face: ['B', 'Y', 'B', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['Y', 'Y', 'G', 'G'] ['R', 'R', 'R', 'R'] ['W', 'B', 'W', 'B'] ['G', 'W', 'G', 'W'] ['B', 'Y', 'B', 'Y']
+<__main__.RubiksState object at 0x75f17d3dd0> ['L', 'L', 'R']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['B', 'B', 'W', 'W'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['G', 'Y', 'G', 'Y'] Top Face: ['Y', 'B', 'Y', 'B'] Down Face: ['W', 'G', 'W', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['B', 'B', 'W', 'W'] ['R', 'R', 'R', 'R'] ['G', 'Y', 'G', 'Y'] ['Y', 'B', 'Y', 'B'] ['W', 'G', 'W', 'G']
+<__main__.RubiksState object at 0x75f17d8250> ['L', 'L', 'U']
+Left Face: ['G', 'B', 'O', 'O'] Front Face: ['R', 'B', 'R', 'G'] Right Face: ['B', 'G', 'R', 'R'] Back Face: ['O', 'O', 'G', 'B'] Top Face: ['Y', 'Y', 'W', 'W'] Down Face: ['W', 'Y', 'W', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'B', 'O', 'O'] ['R', 'B', 'R', 'G'] ['B', 'G', 'R', 'R'] ['O', 'O', 'G', 'B'] ['Y', 'Y', 'W', 'W'] ['W', 'Y', 'W', 'Y']
+<__main__.RubiksState object at 0x75f17d8690> ['L', 'L', 'D']
+Left Face: ['O', 'O', 'B', 'G'] Front Face: ['B', 'R', 'G', 'R'] Right Face: ['R', 'R', 'B', 'G'] Back Face: ['G', 'B', 'O', 'O'] Top Face: ['Y', 'W', 'Y', 'W'] Down Face: ['W', 'W', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'B', 'G'] ['B', 'R', 'G', 'R'] ['R', 'R', 'B', 'G'] ['G', 'B', 'O', 'O'] ['Y', 'W', 'Y', 'W'] ['W', 'W', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17d8ad0> ['L', 'L', 'F']
+Left Face: ['W', 'O', 'O', 'Y'] Front Face: ['B', 'G', 'B', 'G'] Right Face: ['Y', 'R', 'W', 'R'] Back Face: ['G', 'B', 'G', 'B'] Top Face: ['Y', 'W', 'O', 'O'] Down Face: ['W', 'Y', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'O', 'O', 'Y'] ['B', 'G', 'B', 'G'] ['Y', 'R', 'W', 'R'] ['G', 'B', 'G', 'B'] ['Y', 'W', 'O', 'O'] ['W', 'Y', 'R', 'R']
+<__main__.RubiksState object at 0x75f17d8f10> ['L', 'L', 'B']
+Left Face: ['O', 'W', 'Y', 'O'] Front Face: ['B', 'B', 'G', 'G'] Right Face: ['R', 'Y', 'R', 'W'] Back Face: ['G', 'G', 'B', 'B'] Top Face: ['O', 'O', 'Y', 'W'] Down Face: ['R', 'R', 'W', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'W', 'Y', 'O'] ['B', 'B', 'G', 'G'] ['R', 'Y', 'R', 'W'] ['G', 'G', 'B', 'B'] ['O', 'O', 'Y', 'W'] ['R', 'R', 'W', 'Y']
+<__main__.RubiksState object at 0x75f17bf910> ['L', 'R', 'L']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['B', 'B', 'W', 'W'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['G', 'Y', 'G', 'Y'] Top Face: ['Y', 'B', 'Y', 'B'] Down Face: ['W', 'G', 'W', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['B', 'B', 'W', 'W'] ['R', 'R', 'R', 'R'] ['G', 'Y', 'G', 'Y'] ['Y', 'B', 'Y', 'B'] ['W', 'G', 'W', 'G']
+<__main__.RubiksState object at 0x75f17d9350> ['L', 'R', 'R']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['W', 'W', 'B', 'B'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['Y', 'G', 'Y', 'G'] Top Face: ['B', 'Y', 'B', 'Y'] Down Face: ['G', 'W', 'G', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['W', 'W', 'B', 'B'] ['R', 'R', 'R', 'R'] ['Y', 'G', 'Y', 'G'] ['B', 'Y', 'B', 'Y'] ['G', 'W', 'G', 'W']
+<__main__.RubiksState object at 0x75f17d9790> ['L', 'R', 'U']
+Left Face: ['W', 'W', 'O', 'O'] Front Face: ['R', 'W', 'R', 'W'] Right Face: ['Y', 'Y', 'R', 'R'] Back Face: ['O', 'O', 'Y', 'Y'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'W', 'O', 'O'] ['R', 'W', 'R', 'W'] ['Y', 'Y', 'R', 'R'] ['O', 'O', 'Y', 'Y'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f17d9bd0> ['L', 'R', 'D']
+Left Face: ['O', 'O', 'W', 'W'] Front Face: ['W', 'R', 'W', 'R'] Right Face: ['R', 'R', 'Y', 'Y'] Back Face: ['Y', 'Y', 'O', 'O'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'W', 'W'] ['W', 'R', 'W', 'R'] ['R', 'R', 'Y', 'Y'] ['Y', 'Y', 'O', 'O'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f17da010> ['L', 'R', 'F']
+Left Face: ['G', 'O', 'O', 'G'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['B', 'R', 'B', 'R'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['B', 'B', 'O', 'O'] Down Face: ['G', 'G', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'O', 'G'] ['W', 'W', 'W', 'W'] ['B', 'R', 'B', 'R'] ['Y', 'Y', 'Y', 'Y'] ['B', 'B', 'O', 'O'] ['G', 'G', 'R', 'R']
+<__main__.RubiksState object at 0x75f17da450> ['L', 'R', 'B']
+Left Face: ['O', 'G', 'G', 'O'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['R', 'B', 'R', 'B'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['O', 'O', 'B', 'B'] Down Face: ['R', 'R', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'G', 'O'] ['W', 'W', 'W', 'W'] ['R', 'B', 'R', 'B'] ['Y', 'Y', 'Y', 'Y'] ['O', 'O', 'B', 'B'] ['R', 'R', 'G', 'G']
+<__main__.RubiksState object at 0x75f17bfd50> ['L', 'U', 'L']
+Left Face: ['W', 'O', 'O', 'G'] Front Face: ['B', 'W', 'R', 'G'] Right Face: ['B', 'Y', 'R', 'R'] Back Face: ['G', 'O', 'G', 'B'] Top Face: ['Y', 'B', 'O', 'W'] Down Face: ['W', 'Y', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'O', 'O', 'G'] ['B', 'W', 'R', 'G'] ['B', 'Y', 'R', 'R'] ['G', 'O', 'G', 'B'] ['Y', 'B', 'O', 'W'] ['W', 'Y', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17da890> ['L', 'U', 'R']
+Left Face: ['G', 'W', 'O', 'O'] Front Face: ['R', 'W', 'B', 'W'] Right Face: ['Y', 'R', 'B', 'R'] Back Face: ['O', 'Y', 'Y', 'Y'] Top Face: ['B', 'B', 'W', 'O'] Down Face: ['G', 'G', 'G', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'W', 'O', 'O'] ['R', 'W', 'B', 'W'] ['Y', 'R', 'B', 'R'] ['O', 'Y', 'Y', 'Y'] ['B', 'B', 'W', 'O'] ['G', 'G', 'G', 'R']
+<__main__.RubiksState object at 0x75f17dacd0> ['L', 'U', 'U']
+Left Face: ['R', 'R', 'O', 'O'] Front Face: ['B', 'W', 'Y', 'G'] Right Face: ['O', 'O', 'R', 'R'] Back Face: ['G', 'W', 'Y', 'B'] Top Face: ['W', 'B', 'W', 'B'] Down Face: ['G', 'Y', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'R', 'O', 'O'] ['B', 'W', 'Y', 'G'] ['O', 'O', 'R', 'R'] ['G', 'W', 'Y', 'B'] ['W', 'B', 'W', 'B'] ['G', 'Y', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17db110> ['L', 'U', 'D']
+Left Face: ['G', 'W', 'W', 'G'] Front Face: ['R', 'R', 'R', 'R'] Right Face: ['B', 'Y', 'B', 'Y'] Back Face: ['O', 'O', 'O', 'O'] Top Face: ['B', 'B', 'W', 'W'] Down Face: ['G', 'G', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'W', 'W', 'G'] ['R', 'R', 'R', 'R'] ['B', 'Y', 'B', 'Y'] ['O', 'O', 'O', 'O'] ['B', 'B', 'W', 'W'] ['G', 'G', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17db550> ['L', 'U', 'F']
+Left Face: ['G', 'W', 'O', 'Y'] Front Face: ['W', 'G', 'R', 'R'] Right Face: ['W', 'Y', 'W', 'R'] Back Face: ['O', 'O', 'Y', 'B'] Top Face: ['B', 'B', 'O', 'G'] Down Face: ['G', 'Y', 'R', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'W', 'O', 'Y'] ['W', 'G', 'R', 'R'] ['W', 'Y', 'W', 'R'] ['O', 'O', 'Y', 'B'] ['B', 'B', 'O', 'G'] ['G', 'Y', 'R', 'B']
+<__main__.RubiksState object at 0x75f17db990> ['L', 'U', 'B']
+Left Face: ['G', 'G', 'Y', 'O'] Front Face: ['R', 'W', 'R', 'G'] Right Face: ['B', 'B', 'R', 'B'] Back Face: ['Y', 'O', 'B', 'O'] Top Face: ['O', 'W', 'W', 'W'] Down Face: ['R', 'Y', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'Y', 'O'] ['R', 'W', 'R', 'G'] ['B', 'B', 'R', 'B'] ['Y', 'O', 'B', 'O'] ['O', 'W', 'W', 'W'] ['R', 'Y', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17cc1d0> ['L', 'D', 'L']
+Left Face: ['O', 'W', 'G', 'O'] Front Face: ['B', 'B', 'G', 'R'] Right Face: ['R', 'R', 'B', 'Y'] Back Face: ['G', 'B', 'Y', 'O'] Top Face: ['O', 'W', 'Y', 'W'] Down Face: ['R', 'G', 'W', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'W', 'G', 'O'] ['B', 'B', 'G', 'R'] ['R', 'R', 'B', 'Y'] ['G', 'B', 'Y', 'O'] ['O', 'W', 'Y', 'W'] ['R', 'G', 'W', 'Y']
+<__main__.RubiksState object at 0x75f17dbdd0> ['L', 'D', 'R']
+Left Face: ['O', 'O', 'W', 'G'] Front Face: ['W', 'R', 'W', 'W'] Right Face: ['R', 'Y', 'R', 'B'] Back Face: ['Y', 'G', 'O', 'Y'] Top Face: ['B', 'O', 'B', 'B'] Down Face: ['G', 'R', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'W', 'G'] ['W', 'R', 'W', 'W'] ['R', 'Y', 'R', 'B'] ['Y', 'G', 'O', 'Y'] ['B', 'O', 'B', 'B'] ['G', 'R', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17dc250> ['L', 'D', 'U']
+Left Face: ['G', 'W', 'W', 'G'] Front Face: ['R', 'R', 'R', 'R'] Right Face: ['B', 'Y', 'B', 'Y'] Back Face: ['O', 'O', 'O', 'O'] Top Face: ['B', 'B', 'W', 'W'] Down Face: ['G', 'G', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'W', 'W', 'G'] ['R', 'R', 'R', 'R'] ['B', 'Y', 'B', 'Y'] ['O', 'O', 'O', 'O'] ['B', 'B', 'W', 'W'] ['G', 'G', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17dc690> ['L', 'D', 'D']
+Left Face: ['O', 'O', 'R', 'R'] Front Face: ['W', 'B', 'G', 'Y'] Right Face: ['R', 'R', 'O', 'O'] Back Face: ['Y', 'B', 'G', 'W'] Top Face: ['B', 'W', 'B', 'W'] Down Face: ['Y', 'G', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'R', 'R'] ['W', 'B', 'G', 'Y'] ['R', 'R', 'O', 'O'] ['Y', 'B', 'G', 'W'] ['B', 'W', 'B', 'W'] ['Y', 'G', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17dcad0> ['L', 'D', 'F']
+Left Face: ['Y', 'O', 'W', 'Y'] Front Face: ['R', 'R', 'W', 'G'] Right Face: ['B', 'R', 'W', 'Y'] Back Face: ['Y', 'B', 'O', 'O'] Top Face: ['B', 'W', 'G', 'O'] Down Face: ['G', 'G', 'B', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'W', 'Y'] ['R', 'R', 'W', 'G'] ['B', 'R', 'W', 'Y'] ['Y', 'B', 'O', 'O'] ['B', 'W', 'G', 'O'] ['G', 'G', 'B', 'R']
+<__main__.RubiksState object at 0x75f17dcf10> ['L', 'D', 'B']
+Left Face: ['O', 'G', 'G', 'G'] Front Face: ['W', 'R', 'G', 'R'] Right Face: ['R', 'B', 'B', 'W'] Back Face: ['O', 'Y', 'O', 'B'] Top Face: ['W', 'O', 'B', 'W'] Down Face: ['Y', 'R', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'G', 'G'] ['W', 'R', 'G', 'R'] ['R', 'B', 'B', 'W'] ['O', 'Y', 'O', 'B'] ['W', 'O', 'B', 'W'] ['Y', 'R', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17cc610> ['L', 'F', 'L']
+Left Face: ['O', 'O', 'Y', 'G'] Front Face: ['B', 'O', 'W', 'G'] Right Face: ['B', 'R', 'W', 'R'] Back Face: ['G', 'B', 'R', 'B'] Top Face: ['Y', 'W', 'Y', 'O'] Down Face: ['G', 'Y', 'W', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'Y', 'G'] ['B', 'O', 'W', 'G'] ['B', 'R', 'W', 'R'] ['G', 'B', 'R', 'B'] ['Y', 'W', 'Y', 'O'] ['G', 'Y', 'W', 'R']
+<__main__.RubiksState object at 0x75f17dd350> ['L', 'F', 'R']
+Left Face: ['G', 'O', 'O', 'Y'] Front Face: ['W', 'G', 'W', 'O'] Right Face: ['R', 'R', 'B', 'W'] Back Face: ['Y', 'Y', 'Y', 'R'] Top Face: ['B', 'B', 'O', 'B'] Down Face: ['G', 'G', 'R', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'O', 'Y'] ['W', 'G', 'W', 'O'] ['R', 'R', 'B', 'W'] ['Y', 'Y', 'Y', 'R'] ['B', 'B', 'O', 'B'] ['G', 'G', 'R', 'W']
+<__main__.RubiksState object at 0x75f17dd790> ['L', 'F', 'U']
+Left Face: ['W', 'W', 'O', 'Y'] Front Face: ['B', 'G', 'R', 'G'] Right Face: ['B', 'Y', 'W', 'R'] Back Face: ['G', 'O', 'Y', 'B'] Top Face: ['O', 'B', 'O', 'W'] Down Face: ['G', 'Y', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'W', 'O', 'Y'] ['B', 'G', 'R', 'G'] ['B', 'Y', 'W', 'R'] ['G', 'O', 'Y', 'B'] ['O', 'B', 'O', 'W'] ['G', 'Y', 'R', 'R']
+<__main__.RubiksState object at 0x75f17ddbd0> ['L', 'F', 'D']
+Left Face: ['G', 'O', 'G', 'G'] Front Face: ['W', 'W', 'W', 'R'] Right Face: ['B', 'R', 'B', 'Y'] Back Face: ['Y', 'B', 'Y', 'O'] Top Face: ['B', 'W', 'O', 'O'] Down Face: ['R', 'G', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'G', 'G'] ['W', 'W', 'W', 'R'] ['B', 'R', 'B', 'Y'] ['Y', 'B', 'Y', 'O'] ['B', 'W', 'O', 'O'] ['R', 'G', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17de010> ['L', 'F', 'F']
+Left Face: ['R', 'O', 'O', 'R'] Front Face: ['G', 'G', 'W', 'W'] Right Face: ['O', 'R', 'O', 'R'] Back Face: ['Y', 'B', 'Y', 'B'] Top Face: ['B', 'W', 'Y', 'G'] Down Face: ['G', 'Y', 'W', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'O', 'O', 'R'] ['G', 'G', 'W', 'W'] ['O', 'R', 'O', 'R'] ['Y', 'B', 'Y', 'B'] ['B', 'W', 'Y', 'G'] ['G', 'Y', 'W', 'B']
+<__main__.RubiksState object at 0x75f17de450> ['L', 'F', 'B']
+Left Face: ['G', 'G', 'Y', 'Y'] Front Face: ['W', 'G', 'W', 'G'] Right Face: ['B', 'B', 'W', 'W'] Back Face: ['Y', 'Y', 'B', 'B'] Top Face: ['O', 'O', 'O', 'O'] Down Face: ['R', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'Y', 'Y'] ['W', 'G', 'W', 'G'] ['B', 'B', 'W', 'W'] ['Y', 'Y', 'B', 'B'] ['O', 'O', 'O', 'O'] ['R', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f17cca50> ['L', 'B', 'L']
+Left Face: ['G', 'Y', 'O', 'O'] Front Face: ['O', 'B', 'G', 'G'] Right Face: ['R', 'B', 'R', 'W'] Back Face: ['R', 'Y', 'G', 'B'] Top Face: ['B', 'O', 'Y', 'W'] Down Face: ['W', 'R', 'W', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'Y', 'O', 'O'] ['O', 'B', 'G', 'G'] ['R', 'B', 'R', 'W'] ['R', 'Y', 'G', 'B'] ['B', 'O', 'Y', 'W'] ['W', 'R', 'W', 'Y']
+<__main__.RubiksState object at 0x75f17de890> ['L', 'B', 'R']
+Left Face: ['O', 'G', 'Y', 'O'] Front Face: ['W', 'W', 'O', 'W'] Right Face: ['B', 'W', 'R', 'R'] Back Face: ['Y', 'R', 'B', 'Y'] Top Face: ['O', 'B', 'B', 'Y'] Down Face: ['R', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'Y', 'O'] ['W', 'W', 'O', 'W'] ['B', 'W', 'R', 'R'] ['Y', 'R', 'B', 'Y'] ['O', 'B', 'B', 'Y'] ['R', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f17decd0> ['L', 'B', 'U']
+Left Face: ['G', 'W', 'Y', 'O'] Front Face: ['R', 'W', 'B', 'G'] Right Face: ['Y', 'Y', 'R', 'W'] Back Face: ['O', 'G', 'B', 'B'] Top Face: ['B', 'O', 'W', 'O'] Down Face: ['R', 'R', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'W', 'Y', 'O'] ['R', 'W', 'B', 'G'] ['Y', 'Y', 'R', 'W'] ['O', 'G', 'B', 'B'] ['B', 'O', 'W', 'O'] ['R', 'R', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17df110> ['L', 'B', 'D']
+Left Face: ['O', 'G', 'W', 'G'] Front Face: ['W', 'R', 'G', 'W'] Right Face: ['R', 'B', 'B', 'B'] Back Face: ['Y', 'Y', 'O', 'Y'] Top Face: ['O', 'O', 'B', 'W'] Down Face: ['G', 'R', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'W', 'G'] ['W', 'R', 'G', 'W'] ['R', 'B', 'B', 'B'] ['Y', 'Y', 'O', 'Y'] ['O', 'O', 'B', 'W'] ['G', 'R', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17df550> ['L', 'B', 'F']
+Left Face: ['G', 'G', 'Y', 'Y'] Front Face: ['W', 'G', 'W', 'G'] Right Face: ['B', 'B', 'W', 'W'] Back Face: ['Y', 'Y', 'B', 'B'] Top Face: ['O', 'O', 'O', 'O'] Down Face: ['R', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'Y', 'Y'] ['W', 'G', 'W', 'G'] ['B', 'B', 'W', 'W'] ['Y', 'Y', 'B', 'B'] ['O', 'O', 'O', 'O'] ['R', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f17df990> ['L', 'B', 'B']
+Left Face: ['O', 'R', 'R', 'O'] Front Face: ['W', 'W', 'G', 'G'] Right Face: ['R', 'O', 'R', 'O'] Back Face: ['B', 'Y', 'B', 'Y'] Top Face: ['Y', 'G', 'B', 'W'] Down Face: ['W', 'B', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'R', 'R', 'O'] ['W', 'W', 'G', 'G'] ['R', 'O', 'R', 'O'] ['B', 'Y', 'B', 'Y'] ['Y', 'G', 'B', 'W'] ['W', 'B', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17cce90> ['R', 'L', 'L']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['B', 'B', 'W', 'W'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['G', 'Y', 'G', 'Y'] Top Face: ['Y', 'B', 'Y', 'B'] Down Face: ['W', 'G', 'W', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['B', 'B', 'W', 'W'] ['R', 'R', 'R', 'R'] ['G', 'Y', 'G', 'Y'] ['Y', 'B', 'Y', 'B'] ['W', 'G', 'W', 'G']
+<__main__.RubiksState object at 0x75f17dfdd0> ['R', 'L', 'R']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['W', 'W', 'B', 'B'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['Y', 'G', 'Y', 'G'] Top Face: ['B', 'Y', 'B', 'Y'] Down Face: ['G', 'W', 'G', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['W', 'W', 'B', 'B'] ['R', 'R', 'R', 'R'] ['Y', 'G', 'Y', 'G'] ['B', 'Y', 'B', 'Y'] ['G', 'W', 'G', 'W']
+<__main__.RubiksState object at 0x75f17e0250> ['R', 'L', 'U']
+Left Face: ['W', 'W', 'O', 'O'] Front Face: ['R', 'W', 'R', 'W'] Right Face: ['Y', 'Y', 'R', 'R'] Back Face: ['O', 'O', 'Y', 'Y'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'W', 'O', 'O'] ['R', 'W', 'R', 'W'] ['Y', 'Y', 'R', 'R'] ['O', 'O', 'Y', 'Y'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f17e0690> ['R', 'L', 'D']
+Left Face: ['O', 'O', 'W', 'W'] Front Face: ['W', 'R', 'W', 'R'] Right Face: ['R', 'R', 'Y', 'Y'] Back Face: ['Y', 'Y', 'O', 'O'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'W', 'W'] ['W', 'R', 'W', 'R'] ['R', 'R', 'Y', 'Y'] ['Y', 'Y', 'O', 'O'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f17e0ad0> ['R', 'L', 'F']
+Left Face: ['G', 'O', 'O', 'G'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['B', 'R', 'B', 'R'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['B', 'B', 'O', 'O'] Down Face: ['G', 'G', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'O', 'G'] ['W', 'W', 'W', 'W'] ['B', 'R', 'B', 'R'] ['Y', 'Y', 'Y', 'Y'] ['B', 'B', 'O', 'O'] ['G', 'G', 'R', 'R']
+<__main__.RubiksState object at 0x75f17e0f10> ['R', 'L', 'B']
+Left Face: ['O', 'G', 'G', 'O'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['R', 'B', 'R', 'B'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['O', 'O', 'B', 'B'] Down Face: ['R', 'R', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'G', 'O'] ['W', 'W', 'W', 'W'] ['R', 'B', 'R', 'B'] ['Y', 'Y', 'Y', 'Y'] ['O', 'O', 'B', 'B'] ['R', 'R', 'G', 'G']
+<__main__.RubiksState object at 0x75f17be110> ['R', 'R', 'L']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['W', 'W', 'B', 'B'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['Y', 'G', 'Y', 'G'] Top Face: ['B', 'Y', 'B', 'Y'] Down Face: ['G', 'W', 'G', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['W', 'W', 'B', 'B'] ['R', 'R', 'R', 'R'] ['Y', 'G', 'Y', 'G'] ['B', 'Y', 'B', 'Y'] ['G', 'W', 'G', 'W']
+<__main__.RubiksState object at 0x75f17e1350> ['R', 'R', 'R']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['G', 'G', 'Y', 'Y'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['B', 'W', 'B', 'W'] Top Face: ['W', 'G', 'W', 'G'] Down Face: ['Y', 'B', 'Y', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['G', 'G', 'Y', 'Y'] ['R', 'R', 'R', 'R'] ['B', 'W', 'B', 'W'] ['W', 'G', 'W', 'G'] ['Y', 'B', 'Y', 'B']
+<__main__.RubiksState object at 0x75f17e1790> ['R', 'R', 'U']
+Left Face: ['B', 'G', 'O', 'O'] Front Face: ['R', 'G', 'R', 'B'] Right Face: ['G', 'B', 'R', 'R'] Back Face: ['O', 'O', 'B', 'G'] Top Face: ['W', 'W', 'Y', 'Y'] Down Face: ['Y', 'W', 'Y', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['B', 'G', 'O', 'O'] ['R', 'G', 'R', 'B'] ['G', 'B', 'R', 'R'] ['O', 'O', 'B', 'G'] ['W', 'W', 'Y', 'Y'] ['Y', 'W', 'Y', 'W']
+<__main__.RubiksState object at 0x75f17e1bd0> ['R', 'R', 'D']
+Left Face: ['O', 'O', 'G', 'B'] Front Face: ['G', 'R', 'B', 'R'] Right Face: ['R', 'R', 'G', 'B'] Back Face: ['B', 'G', 'O', 'O'] Top Face: ['W', 'Y', 'W', 'Y'] Down Face: ['Y', 'Y', 'W', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'G', 'B'] ['G', 'R', 'B', 'R'] ['R', 'R', 'G', 'B'] ['B', 'G', 'O', 'O'] ['W', 'Y', 'W', 'Y'] ['Y', 'Y', 'W', 'W']
+<__main__.RubiksState object at 0x75f17e2010> ['R', 'R', 'F']
+Left Face: ['Y', 'O', 'O', 'W'] Front Face: ['G', 'B', 'G', 'B'] Right Face: ['W', 'R', 'Y', 'R'] Back Face: ['B', 'G', 'B', 'G'] Top Face: ['W', 'Y', 'O', 'O'] Down Face: ['Y', 'W', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'O', 'W'] ['G', 'B', 'G', 'B'] ['W', 'R', 'Y', 'R'] ['B', 'G', 'B', 'G'] ['W', 'Y', 'O', 'O'] ['Y', 'W', 'R', 'R']
+<__main__.RubiksState object at 0x75f17e2450> ['R', 'R', 'B']
+Left Face: ['O', 'Y', 'W', 'O'] Front Face: ['G', 'G', 'B', 'B'] Right Face: ['R', 'W', 'R', 'Y'] Back Face: ['B', 'B', 'G', 'G'] Top Face: ['O', 'O', 'W', 'Y'] Down Face: ['R', 'R', 'Y', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'W', 'O'] ['G', 'G', 'B', 'B'] ['R', 'W', 'R', 'Y'] ['B', 'B', 'G', 'G'] ['O', 'O', 'W', 'Y'] ['R', 'R', 'Y', 'W']
+<__main__.RubiksState object at 0x75f17cd310> ['R', 'U', 'L']
+Left Face: ['G', 'O', 'O', 'W'] Front Face: ['W', 'B', 'R', 'W'] Right Face: ['Y', 'B', 'R', 'R'] Back Face: ['Y', 'O', 'Y', 'Y'] Top Face: ['B', 'W', 'O', 'B'] Down Face: ['G', 'G', 'R', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'O', 'W'] ['W', 'B', 'R', 'W'] ['Y', 'B', 'R', 'R'] ['Y', 'O', 'Y', 'Y'] ['B', 'W', 'O', 'B'] ['G', 'G', 'R', 'G']
+<__main__.RubiksState object at 0x75f17e2890> ['R', 'U', 'R']
+Left Face: ['W', 'G', 'O', 'O'] Front Face: ['R', 'G', 'W', 'B'] Right Face: ['B', 'R', 'Y', 'R'] Back Face: ['O', 'G', 'B', 'G'] Top Face: ['W', 'Y', 'B', 'O'] Down Face: ['Y', 'W', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'G', 'O', 'O'] ['R', 'G', 'W', 'B'] ['B', 'R', 'Y', 'R'] ['O', 'G', 'B', 'G'] ['W', 'Y', 'B', 'O'] ['Y', 'W', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17e2cd0> ['R', 'U', 'U']
+Left Face: ['R', 'R', 'O', 'O'] Front Face: ['Y', 'G', 'B', 'W'] Right Face: ['O', 'O', 'R', 'R'] Back Face: ['W', 'G', 'B', 'Y'] Top Face: ['B', 'W', 'B', 'W'] Down Face: ['Y', 'G', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'R', 'O', 'O'] ['Y', 'G', 'B', 'W'] ['O', 'O', 'R', 'R'] ['W', 'G', 'B', 'Y'] ['B', 'W', 'B', 'W'] ['Y', 'G', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17e3110> ['R', 'U', 'D']
+Left Face: ['W', 'G', 'G', 'W'] Front Face: ['R', 'R', 'R', 'R'] Right Face: ['Y', 'B', 'Y', 'B'] Back Face: ['O', 'O', 'O', 'O'] Top Face: ['W', 'W', 'B', 'B'] Down Face: ['Y', 'Y', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'G', 'G', 'W'] ['R', 'R', 'R', 'R'] ['Y', 'B', 'Y', 'B'] ['O', 'O', 'O', 'O'] ['W', 'W', 'B', 'B'] ['Y', 'Y', 'G', 'G']
+<__main__.RubiksState object at 0x75f17e3550> ['R', 'U', 'F']
+Left Face: ['Y', 'G', 'O', 'G'] Front Face: ['G', 'W', 'R', 'R'] Right Face: ['B', 'B', 'B', 'R'] Back Face: ['O', 'O', 'B', 'Y'] Top Face: ['W', 'W', 'O', 'W'] Down Face: ['Y', 'G', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'O', 'G'] ['G', 'W', 'R', 'R'] ['B', 'B', 'B', 'R'] ['O', 'O', 'B', 'Y'] ['W', 'W', 'O', 'W'] ['Y', 'G', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17e3990> ['R', 'U', 'B']
+Left Face: ['W', 'Y', 'G', 'O'] Front Face: ['R', 'G', 'R', 'W'] Right Face: ['Y', 'W', 'R', 'W'] Back Face: ['B', 'O', 'Y', 'O'] Top Face: ['O', 'G', 'B', 'B'] Down Face: ['R', 'B', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'Y', 'G', 'O'] ['R', 'G', 'R', 'W'] ['Y', 'W', 'R', 'W'] ['B', 'O', 'Y', 'O'] ['O', 'G', 'B', 'B'] ['R', 'B', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17cd750> ['R', 'D', 'L']
+Left Face: ['O', 'G', 'W', 'O'] Front Face: ['W', 'W', 'W', 'R'] Right Face: ['R', 'R', 'Y', 'B'] Back Face: ['Y', 'Y', 'G', 'O'] Top Face: ['O', 'B', 'B', 'B'] Down Face: ['R', 'Y', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'W', 'O'] ['W', 'W', 'W', 'R'] ['R', 'R', 'Y', 'B'] ['Y', 'Y', 'G', 'O'] ['O', 'B', 'B', 'B'] ['R', 'Y', 'G', 'G']
+<__main__.RubiksState object at 0x75f17e3dd0> ['R', 'D', 'R']
+Left Face: ['O', 'O', 'G', 'W'] Front Face: ['G', 'R', 'B', 'B'] Right Face: ['R', 'B', 'R', 'Y'] Back Face: ['B', 'Y', 'O', 'G'] Top Face: ['W', 'O', 'W', 'Y'] Down Face: ['Y', 'R', 'G', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'G', 'W'] ['G', 'R', 'B', 'B'] ['R', 'B', 'R', 'Y'] ['B', 'Y', 'O', 'G'] ['W', 'O', 'W', 'Y'] ['Y', 'R', 'G', 'W']
+<__main__.RubiksState object at 0x75f17ec250> ['R', 'D', 'U']
+Left Face: ['W', 'G', 'G', 'W'] Front Face: ['R', 'R', 'R', 'R'] Right Face: ['Y', 'B', 'Y', 'B'] Back Face: ['O', 'O', 'O', 'O'] Top Face: ['W', 'W', 'B', 'B'] Down Face: ['Y', 'Y', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'G', 'G', 'W'] ['R', 'R', 'R', 'R'] ['Y', 'B', 'Y', 'B'] ['O', 'O', 'O', 'O'] ['W', 'W', 'B', 'B'] ['Y', 'Y', 'G', 'G']
+<__main__.RubiksState object at 0x75f17ec690> ['R', 'D', 'D']
+Left Face: ['O', 'O', 'R', 'R'] Front Face: ['G', 'Y', 'W', 'B'] Right Face: ['R', 'R', 'O', 'O'] Back Face: ['B', 'Y', 'W', 'G'] Top Face: ['W', 'B', 'W', 'B'] Down Face: ['G', 'Y', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'R', 'R'] ['G', 'Y', 'W', 'B'] ['R', 'R', 'O', 'O'] ['B', 'Y', 'W', 'G'] ['W', 'B', 'W', 'B'] ['G', 'Y', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17ecad0> ['R', 'D', 'F']
+Left Face: ['G', 'O', 'G', 'G'] Front Face: ['R', 'R', 'G', 'W'] Right Face: ['W', 'R', 'B', 'B'] Back Face: ['B', 'Y', 'O', 'O'] Top Face: ['W', 'B', 'W', 'O'] Down Face: ['Y', 'Y', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'G', 'G'] ['R', 'R', 'G', 'W'] ['W', 'R', 'B', 'B'] ['B', 'Y', 'O', 'O'] ['W', 'B', 'W', 'O'] ['Y', 'Y', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17ecf10> ['R', 'D', 'B']
+Left Face: ['O', 'Y', 'Y', 'W'] Front Face: ['G', 'R', 'W', 'R'] Right Face: ['R', 'W', 'Y', 'B'] Back Face: ['O', 'B', 'O', 'Y'] Top Face: ['G', 'O', 'W', 'B'] Down Face: ['B', 'R', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'Y', 'W'] ['G', 'R', 'W', 'R'] ['R', 'W', 'Y', 'B'] ['O', 'B', 'O', 'Y'] ['G', 'O', 'W', 'B'] ['B', 'R', 'G', 'G']
+<__main__.RubiksState object at 0x75f17cdb90> ['R', 'F', 'L']
+Left Face: ['O', 'O', 'G', 'Y'] Front Face: ['W', 'O', 'G', 'W'] Right Face: ['W', 'R', 'B', 'R'] Back Face: ['Y', 'Y', 'R', 'Y'] Top Face: ['B', 'B', 'B', 'O'] Down Face: ['W', 'G', 'G', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'G', 'Y'] ['W', 'O', 'G', 'W'] ['W', 'R', 'B', 'R'] ['Y', 'Y', 'R', 'Y'] ['B', 'B', 'B', 'O'] ['W', 'G', 'G', 'R']
+<__main__.RubiksState object at 0x75f17ed350> ['R', 'F', 'R']
+Left Face: ['Y', 'O', 'O', 'G'] Front Face: ['G', 'W', 'B', 'O'] Right Face: ['R', 'R', 'W', 'B'] Back Face: ['B', 'G', 'B', 'R'] Top Face: ['W', 'Y', 'O', 'Y'] Down Face: ['Y', 'W', 'R', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'O', 'G'] ['G', 'W', 'B', 'O'] ['R', 'R', 'W', 'B'] ['B', 'G', 'B', 'R'] ['W', 'Y', 'O', 'Y'] ['Y', 'W', 'R', 'G']
+<__main__.RubiksState object at 0x75f17ed790> ['R', 'F', 'U']
+Left Face: ['G', 'G', 'O', 'G'] Front Face: ['W', 'W', 'R', 'W'] Right Face: ['Y', 'B', 'B', 'R'] Back Face: ['Y', 'O', 'B', 'Y'] Top Face: ['O', 'W', 'O', 'B'] Down Face: ['Y', 'G', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'O', 'G'] ['W', 'W', 'R', 'W'] ['Y', 'B', 'B', 'R'] ['Y', 'O', 'B', 'Y'] ['O', 'W', 'O', 'B'] ['Y', 'G', 'R', 'R']
+<__main__.RubiksState object at 0x75f17edbd0> ['R', 'F', 'D']
+Left Face: ['Y', 'O', 'W', 'W'] Front Face: ['G', 'B', 'G', 'R'] Right Face: ['W', 'R', 'Y', 'B'] Back Face: ['B', 'Y', 'G', 'O'] Top Face: ['W', 'B', 'O', 'O'] Down Face: ['R', 'Y', 'R', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'W', 'W'] ['G', 'B', 'G', 'R'] ['W', 'R', 'Y', 'B'] ['B', 'Y', 'G', 'O'] ['W', 'B', 'O', 'O'] ['R', 'Y', 'R', 'G']
+<__main__.RubiksState object at 0x75f17ee010> ['R', 'F', 'F']
+Left Face: ['R', 'O', 'O', 'R'] Front Face: ['W', 'W', 'G', 'G'] Right Face: ['O', 'R', 'O', 'R'] Back Face: ['B', 'Y', 'B', 'Y'] Top Face: ['W', 'B', 'G', 'Y'] Down Face: ['Y', 'G', 'B', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'O', 'O', 'R'] ['W', 'W', 'G', 'G'] ['O', 'R', 'O', 'R'] ['B', 'Y', 'B', 'Y'] ['W', 'B', 'G', 'Y'] ['Y', 'G', 'B', 'W']
+<__main__.RubiksState object at 0x75f17ee450> ['R', 'F', 'B']
+Left Face: ['Y', 'Y', 'G', 'G'] Front Face: ['G', 'W', 'G', 'W'] Right Face: ['W', 'W', 'B', 'B'] Back Face: ['B', 'B', 'Y', 'Y'] Top Face: ['O', 'O', 'O', 'O'] Down Face: ['R', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'G', 'G'] ['G', 'W', 'G', 'W'] ['W', 'W', 'B', 'B'] ['B', 'B', 'Y', 'Y'] ['O', 'O', 'O', 'O'] ['R', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f17cdfd0> ['R', 'B', 'L']
+Left Face: ['Y', 'G', 'O', 'O'] Front Face: ['O', 'W', 'W', 'W'] Right Face: ['R', 'W', 'R', 'B'] Back Face: ['R', 'B', 'Y', 'Y'] Top Face: ['Y', 'O', 'B', 'B'] Down Face: ['G', 'R', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'O', 'O'] ['O', 'W', 'W', 'W'] ['R', 'W', 'R', 'B'] ['R', 'B', 'Y', 'Y'] ['Y', 'O', 'B', 'B'] ['G', 'R', 'G', 'G']
+<__main__.RubiksState object at 0x75f17ee890> ['R', 'B', 'R']
+Left Face: ['O', 'Y', 'G', 'O'] Front Face: ['G', 'G', 'O', 'B'] Right Face: ['W', 'B', 'R', 'R'] Back Face: ['B', 'R', 'Y', 'G'] Top Face: ['O', 'Y', 'W', 'B'] Down Face: ['R', 'W', 'Y', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'G', 'O'] ['G', 'G', 'O', 'B'] ['W', 'B', 'R', 'R'] ['B', 'R', 'Y', 'G'] ['O', 'Y', 'W', 'B'] ['R', 'W', 'Y', 'W']
+<__main__.RubiksState object at 0x75f17eecd0> ['R', 'B', 'U']
+Left Face: ['W', 'G', 'G', 'O'] Front Face: ['R', 'G', 'W', 'W'] Right Face: ['B', 'B', 'R', 'B'] Back Face: ['O', 'Y', 'Y', 'Y'] Top Face: ['W', 'O', 'B', 'O'] Down Face: ['R', 'R', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'G', 'G', 'O'] ['R', 'G', 'W', 'W'] ['B', 'B', 'R', 'B'] ['O', 'Y', 'Y', 'Y'] ['W', 'O', 'B', 'O'] ['R', 'R', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17ef110> ['R', 'B', 'D']
+Left Face: ['O', 'Y', 'G', 'W'] Front Face: ['G', 'R', 'W', 'B'] Right Face: ['R', 'W', 'Y', 'Y'] Back Face: ['B', 'B', 'O', 'G'] Top Face: ['O', 'O', 'W', 'B'] Down Face: ['Y', 'R', 'G', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'G', 'W'] ['G', 'R', 'W', 'B'] ['R', 'W', 'Y', 'Y'] ['B', 'B', 'O', 'G'] ['O', 'O', 'W', 'B'] ['Y', 'R', 'G', 'R']
+<__main__.RubiksState object at 0x75f17ef550> ['R', 'B', 'F']
+Left Face: ['Y', 'Y', 'G', 'G'] Front Face: ['G', 'W', 'G', 'W'] Right Face: ['W', 'W', 'B', 'B'] Back Face: ['B', 'B', 'Y', 'Y'] Top Face: ['O', 'O', 'O', 'O'] Down Face: ['R', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'G', 'G'] ['G', 'W', 'G', 'W'] ['W', 'W', 'B', 'B'] ['B', 'B', 'Y', 'Y'] ['O', 'O', 'O', 'O'] ['R', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f17ef990> ['R', 'B', 'B']
+Left Face: ['O', 'R', 'R', 'O'] Front Face: ['G', 'G', 'W', 'W'] Right Face: ['R', 'O', 'R', 'O'] Back Face: ['Y', 'B', 'Y', 'B'] Top Face: ['G', 'Y', 'W', 'B'] Down Face: ['B', 'W', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'R', 'R', 'O'] ['G', 'G', 'W', 'W'] ['R', 'O', 'R', 'O'] ['Y', 'B', 'Y', 'B'] ['G', 'Y', 'W', 'B'] ['B', 'W', 'Y', 'G']
+<__main__.RubiksState object at 0x75f179e410> ['U', 'L', 'L']
+Left Face: ['O', 'O', 'G', 'G'] Front Face: ['B', 'O', 'R', 'G'] Right Face: ['B', 'B', 'R', 'R'] Back Face: ['G', 'O', 'R', 'B'] Top Face: ['Y', 'W', 'Y', 'W'] Down Face: ['W', 'Y', 'W', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'G', 'G'] ['B', 'O', 'R', 'G'] ['B', 'B', 'R', 'R'] ['G', 'O', 'R', 'B'] ['Y', 'W', 'Y', 'W'] ['W', 'Y', 'W', 'Y']
+<__main__.RubiksState object at 0x75f17efdd0> ['U', 'L', 'R']
+Left Face: ['G', 'O', 'O', 'G'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['B', 'R', 'B', 'R'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['B', 'B', 'O', 'O'] Down Face: ['G', 'G', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'O', 'G'] ['W', 'W', 'W', 'W'] ['B', 'R', 'B', 'R'] ['Y', 'Y', 'Y', 'Y'] ['B', 'B', 'O', 'O'] ['G', 'G', 'R', 'R']
+<__main__.RubiksState object at 0x75f17f0250> ['U', 'L', 'U']
+Left Face: ['R', 'W', 'O', 'G'] Front Face: ['B', 'W', 'B', 'G'] Right Face: ['O', 'Y', 'R', 'R'] Back Face: ['G', 'O', 'Y', 'B'] Top Face: ['O', 'B', 'W', 'W'] Down Face: ['G', 'Y', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'W', 'O', 'G'] ['B', 'W', 'B', 'G'] ['O', 'Y', 'R', 'R'] ['G', 'O', 'Y', 'B'] ['O', 'B', 'W', 'W'] ['G', 'Y', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17f0690> ['U', 'L', 'D']
+Left Face: ['G', 'O', 'W', 'G'] Front Face: ['W', 'R', 'R', 'R'] Right Face: ['B', 'B', 'B', 'Y'] Back Face: ['Y', 'O', 'G', 'O'] Top Face: ['B', 'W', 'O', 'W'] Down Face: ['R', 'G', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'W', 'G'] ['W', 'R', 'R', 'R'] ['B', 'B', 'B', 'Y'] ['Y', 'O', 'G', 'O'] ['B', 'W', 'O', 'W'] ['R', 'G', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17f0ad0> ['U', 'L', 'F']
+Left Face: ['R', 'O', 'O', 'Y'] Front Face: ['W', 'G', 'W', 'R'] Right Face: ['O', 'B', 'W', 'R'] Back Face: ['Y', 'O', 'Y', 'B'] Top Face: ['B', 'W', 'G', 'G'] Down Face: ['G', 'Y', 'R', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'O', 'O', 'Y'] ['W', 'G', 'W', 'R'] ['O', 'B', 'W', 'R'] ['Y', 'O', 'Y', 'B'] ['B', 'W', 'G', 'G'] ['G', 'Y', 'R', 'B']
+<__main__.RubiksState object at 0x75f17f0f10> ['U', 'L', 'B']
+Left Face: ['G', 'G', 'Y', 'G'] Front Face: ['W', 'W', 'R', 'G'] Right Face: ['B', 'B', 'R', 'W'] Back Face: ['Y', 'Y', 'B', 'O'] Top Face: ['O', 'O', 'O', 'W'] Down Face: ['R', 'B', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'Y', 'G'] ['W', 'W', 'R', 'G'] ['B', 'B', 'R', 'W'] ['Y', 'Y', 'B', 'O'] ['O', 'O', 'O', 'W'] ['R', 'B', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17be510> ['U', 'R', 'L']
+Left Face: ['G', 'O', 'O', 'G'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['B', 'R', 'B', 'R'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['B', 'B', 'O', 'O'] Down Face: ['G', 'G', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'O', 'G'] ['W', 'W', 'W', 'W'] ['B', 'R', 'B', 'R'] ['Y', 'Y', 'Y', 'Y'] ['B', 'B', 'O', 'O'] ['G', 'G', 'R', 'R']
+<__main__.RubiksState object at 0x75f17f1350> ['U', 'R', 'R']
+Left Face: ['G', 'G', 'O', 'O'] Front Face: ['R', 'G', 'B', 'O'] Right Face: ['R', 'R', 'B', 'B'] Back Face: ['O', 'G', 'B', 'R'] Top Face: ['W', 'Y', 'W', 'Y'] Down Face: ['Y', 'W', 'Y', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'O', 'O'] ['R', 'G', 'B', 'O'] ['R', 'R', 'B', 'B'] ['O', 'G', 'B', 'R'] ['W', 'Y', 'W', 'Y'] ['Y', 'W', 'Y', 'W']
+<__main__.RubiksState object at 0x75f17f1790> ['U', 'R', 'U']
+Left Face: ['W', 'R', 'O', 'O'] Front Face: ['B', 'G', 'R', 'W'] Right Face: ['Y', 'O', 'B', 'R'] Back Face: ['G', 'G', 'B', 'Y'] Top Face: ['W', 'W', 'O', 'B'] Down Face: ['Y', 'G', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'R', 'O', 'O'] ['B', 'G', 'R', 'W'] ['Y', 'O', 'B', 'R'] ['G', 'G', 'B', 'Y'] ['W', 'W', 'O', 'B'] ['Y', 'G', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17f1bd0> ['U', 'R', 'D']
+Left Face: ['G', 'G', 'G', 'W'] Front Face: ['R', 'B', 'W', 'R'] Right Face: ['B', 'R', 'Y', 'B'] Back Face: ['O', 'Y', 'O', 'O'] Top Face: ['W', 'B', 'W', 'O'] Down Face: ['Y', 'Y', 'R', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'W'] ['R', 'B', 'W', 'R'] ['B', 'R', 'Y', 'B'] ['O', 'Y', 'O', 'O'] ['W', 'B', 'W', 'O'] ['Y', 'Y', 'R', 'G']
+<__main__.RubiksState object at 0x75f17f2010> ['U', 'R', 'F']
+Left Face: ['Y', 'G', 'O', 'R'] Front Face: ['G', 'W', 'R', 'W'] Right Face: ['W', 'R', 'O', 'R'] Back Face: ['O', 'Y', 'B', 'Y'] Top Face: ['W', 'B', 'O', 'G'] Down Face: ['Y', 'G', 'B', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'O', 'R'] ['G', 'W', 'R', 'W'] ['W', 'R', 'O', 'R'] ['O', 'Y', 'B', 'Y'] ['W', 'B', 'O', 'G'] ['Y', 'G', 'B', 'B']
+<__main__.RubiksState object at 0x75f17f2450> ['U', 'R', 'B']
+Left Face: ['G', 'Y', 'G', 'O'] Front Face: ['R', 'G', 'W', 'W'] Right Face: ['B', 'W', 'B', 'B'] Back Face: ['B', 'O', 'Y', 'Y'] Top Face: ['O', 'G', 'W', 'O'] Down Face: ['R', 'R', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'Y', 'G', 'O'] ['R', 'G', 'W', 'W'] ['B', 'W', 'B', 'B'] ['B', 'O', 'Y', 'Y'] ['O', 'G', 'W', 'O'] ['R', 'R', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17ce350> ['U', 'U', 'L']
+Left Face: ['R', 'O', 'O', 'R'] Front Face: ['W', 'W', 'B', 'G'] Right Face: ['O', 'O', 'R', 'R'] Back Face: ['Y', 'G', 'Y', 'B'] Top Face: ['B', 'W', 'G', 'W'] Down Face: ['G', 'Y', 'B', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'O', 'O', 'R'] ['W', 'W', 'B', 'G'] ['O', 'O', 'R', 'R'] ['Y', 'G', 'Y', 'B'] ['B', 'W', 'G', 'W'] ['G', 'Y', 'B', 'Y']
+<__main__.RubiksState object at 0x75f17f2890> ['U', 'U', 'R']
+Left Face: ['R', 'R', 'O', 'O'] Front Face: ['B', 'G', 'W', 'W'] Right Face: ['O', 'R', 'O', 'R'] Back Face: ['G', 'Y', 'B', 'Y'] Top Face: ['W', 'B', 'W', 'G'] Down Face: ['Y', 'G', 'Y', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'R', 'O', 'O'] ['B', 'G', 'W', 'W'] ['O', 'R', 'O', 'R'] ['G', 'Y', 'B', 'Y'] ['W', 'B', 'W', 'G'] ['Y', 'G', 'Y', 'B']
+<__main__.RubiksState object at 0x75f17f2cd0> ['U', 'U', 'U']
+Left Face: ['B', 'B', 'O', 'O'] Front Face: ['O', 'G', 'O', 'G'] Right Face: ['G', 'G', 'R', 'R'] Back Face: ['R', 'R', 'B', 'B'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['B', 'B', 'O', 'O'] ['O', 'G', 'O', 'G'] ['G', 'G', 'R', 'R'] ['R', 'R', 'B', 'B'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17f3110> ['U', 'U', 'D']
+Left Face: ['R', 'R', 'G', 'G'] Front Face: ['B', 'R', 'B', 'R'] Right Face: ['O', 'O', 'B', 'B'] Back Face: ['G', 'G', 'O', 'O'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'R', 'G', 'G'] ['B', 'R', 'B', 'R'] ['O', 'O', 'B', 'B'] ['G', 'G', 'O', 'O'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17f3550> ['U', 'U', 'F']
+Left Face: ['Y', 'R', 'O', 'Y'] Front Face: ['G', 'G', 'B', 'B'] Right Face: ['W', 'O', 'W', 'R'] Back Face: ['G', 'G', 'B', 'B'] Top Face: ['W', 'W', 'O', 'R'] Down Face: ['Y', 'Y', 'R', 'O']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'R', 'O', 'Y'] ['G', 'G', 'B', 'B'] ['W', 'O', 'W', 'R'] ['G', 'G', 'B', 'B'] ['W', 'W', 'O', 'R'] ['Y', 'Y', 'R', 'O']
+<__main__.RubiksState object at 0x75f17f3990> ['U', 'U', 'B']
+Left Face: ['R', 'Y', 'Y', 'O'] Front Face: ['B', 'G', 'B', 'G'] Right Face: ['O', 'W', 'R', 'W'] Back Face: ['B', 'G', 'B', 'G'] Top Face: ['O', 'R', 'W', 'W'] Down Face: ['R', 'O', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'Y', 'Y', 'O'] ['B', 'G', 'B', 'G'] ['O', 'W', 'R', 'W'] ['B', 'G', 'B', 'G'] ['O', 'R', 'W', 'W'] ['R', 'O', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17ce790> ['U', 'D', 'L']
+Left Face: ['G', 'G', 'G', 'G'] Front Face: ['W', 'W', 'R', 'R'] Right Face: ['B', 'B', 'B', 'B'] Back Face: ['Y', 'O', 'Y', 'O'] Top Face: ['O', 'W', 'O', 'W'] Down Face: ['R', 'Y', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'G'] ['W', 'W', 'R', 'R'] ['B', 'B', 'B', 'B'] ['Y', 'O', 'Y', 'O'] ['O', 'W', 'O', 'W'] ['R', 'Y', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17f3dd0> ['U', 'D', 'R']
+Left Face: ['G', 'G', 'G', 'G'] Front Face: ['R', 'R', 'W', 'W'] Right Face: ['B', 'B', 'B', 'B'] Back Face: ['O', 'Y', 'O', 'Y'] Top Face: ['W', 'O', 'W', 'O'] Down Face: ['Y', 'R', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'G'] ['R', 'R', 'W', 'W'] ['B', 'B', 'B', 'B'] ['O', 'Y', 'O', 'Y'] ['W', 'O', 'W', 'O'] ['Y', 'R', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17f8250> ['U', 'D', 'U']
+Left Face: ['R', 'R', 'G', 'G'] Front Face: ['B', 'R', 'B', 'R'] Right Face: ['O', 'O', 'B', 'B'] Back Face: ['G', 'G', 'O', 'O'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'R', 'G', 'G'] ['B', 'R', 'B', 'R'] ['O', 'O', 'B', 'B'] ['G', 'G', 'O', 'O'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17f8690> ['U', 'D', 'D']
+Left Face: ['G', 'G', 'R', 'R'] Front Face: ['R', 'B', 'R', 'B'] Right Face: ['B', 'B', 'O', 'O'] Back Face: ['O', 'O', 'G', 'G'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'R', 'R'] ['R', 'B', 'R', 'B'] ['B', 'B', 'O', 'O'] ['O', 'O', 'G', 'G'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17f8ad0> ['U', 'D', 'F']
+Left Face: ['Y', 'G', 'G', 'Y'] Front Face: ['R', 'R', 'R', 'R'] Right Face: ['W', 'B', 'W', 'B'] Back Face: ['O', 'O', 'O', 'O'] Top Face: ['W', 'W', 'G', 'G'] Down Face: ['Y', 'Y', 'B', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'G', 'Y'] ['R', 'R', 'R', 'R'] ['W', 'B', 'W', 'B'] ['O', 'O', 'O', 'O'] ['W', 'W', 'G', 'G'] ['Y', 'Y', 'B', 'B']
+<__main__.RubiksState object at 0x75f17f8f10> ['U', 'D', 'B']
+Left Face: ['G', 'Y', 'Y', 'G'] Front Face: ['R', 'R', 'R', 'R'] Right Face: ['B', 'W', 'B', 'W'] Back Face: ['O', 'O', 'O', 'O'] Top Face: ['G', 'G', 'W', 'W'] Down Face: ['B', 'B', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'Y', 'Y', 'G'] ['R', 'R', 'R', 'R'] ['B', 'W', 'B', 'W'] ['O', 'O', 'O', 'O'] ['G', 'G', 'W', 'W'] ['B', 'B', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17cebd0> ['U', 'F', 'L']
+Left Face: ['G', 'O', 'Y', 'Y'] Front Face: ['W', 'O', 'R', 'R'] Right Face: ['W', 'B', 'W', 'R'] Back Face: ['Y', 'O', 'R', 'B'] Top Face: ['B', 'W', 'O', 'G'] Down Face: ['G', 'Y', 'G', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'Y', 'Y'] ['W', 'O', 'R', 'R'] ['W', 'B', 'W', 'R'] ['Y', 'O', 'R', 'B'] ['B', 'W', 'O', 'G'] ['G', 'Y', 'G', 'B']
+<__main__.RubiksState object at 0x75f17f9350> ['U', 'F', 'R']
+Left Face: ['Y', 'G', 'O', 'Y'] Front Face: ['G', 'G', 'W', 'G'] Right Face: ['B', 'R', 'W', 'W'] Back Face: ['O', 'Y', 'B', 'B'] Top Face: ['W', 'B', 'O', 'O'] Down Face: ['Y', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'O', 'Y'] ['G', 'G', 'W', 'G'] ['B', 'R', 'W', 'W'] ['O', 'Y', 'B', 'B'] ['W', 'B', 'O', 'O'] ['Y', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f17f9790> ['U', 'F', 'U']
+Left Face: ['R', 'G', 'O', 'Y'] Front Face: ['W', 'G', 'B', 'R'] Right Face: ['O', 'O', 'W', 'R'] Back Face: ['Y', 'G', 'B', 'B'] Top Face: ['O', 'W', 'G', 'W'] Down Face: ['Y', 'Y', 'R', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'G', 'O', 'Y'] ['W', 'G', 'B', 'R'] ['O', 'O', 'W', 'R'] ['Y', 'G', 'B', 'B'] ['O', 'W', 'G', 'W'] ['Y', 'Y', 'R', 'B']
+<__main__.RubiksState object at 0x75f17f9bd0> ['U', 'F', 'D']
+Left Face: ['Y', 'G', 'G', 'R'] Front Face: ['G', 'W', 'R', 'R'] Right Face: ['W', 'B', 'B', 'B'] Back Face: ['O', 'O', 'Y', 'O'] Top Face: ['W', 'W', 'O', 'G'] Down Face: ['R', 'Y', 'B', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'G', 'R'] ['G', 'W', 'R', 'R'] ['W', 'B', 'B', 'B'] ['O', 'O', 'Y', 'O'] ['W', 'W', 'O', 'G'] ['R', 'Y', 'B', 'Y']
+<__main__.RubiksState object at 0x75f17fa010> ['U', 'F', 'F']
+Left Face: ['R', 'G', 'O', 'B'] Front Face: ['G', 'R', 'G', 'R'] Right Face: ['O', 'B', 'G', 'R'] Back Face: ['O', 'O', 'B', 'B'] Top Face: ['W', 'W', 'Y', 'Y'] Down Face: ['Y', 'Y', 'W', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'G', 'O', 'B'] ['G', 'R', 'G', 'R'] ['O', 'B', 'G', 'R'] ['O', 'O', 'B', 'B'] ['W', 'W', 'Y', 'Y'] ['Y', 'Y', 'W', 'W']
+<__main__.RubiksState object at 0x75f17fa450> ['U', 'F', 'B']
+Left Face: ['Y', 'Y', 'Y', 'Y'] Front Face: ['G', 'G', 'R', 'R'] Right Face: ['W', 'W', 'W', 'W'] Back Face: ['B', 'O', 'B', 'O'] Top Face: ['O', 'G', 'O', 'G'] Down Face: ['R', 'B', 'R', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'Y'] ['G', 'G', 'R', 'R'] ['W', 'W', 'W', 'W'] ['B', 'O', 'B', 'O'] ['O', 'G', 'O', 'G'] ['R', 'B', 'R', 'B']
+<__main__.RubiksState object at 0x75f17cf010> ['U', 'B', 'L']
+Left Face: ['Y', 'Y', 'O', 'G'] Front Face: ['O', 'W', 'R', 'G'] Right Face: ['B', 'W', 'R', 'W'] Back Face: ['R', 'O', 'Y', 'O'] Top Face: ['B', 'G', 'B', 'W'] Down Face: ['G', 'B', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'O', 'G'] ['O', 'W', 'R', 'G'] ['B', 'W', 'R', 'W'] ['R', 'O', 'Y', 'O'] ['B', 'G', 'B', 'W'] ['G', 'B', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17fa890> ['U', 'B', 'R']
+Left Face: ['G', 'Y', 'Y', 'O'] Front Face: ['R', 'G', 'G', 'W'] Right Face: ['W', 'W', 'B', 'R'] Back Face: ['B', 'B', 'B', 'Y'] Top Face: ['O', 'O', 'W', 'O'] Down Face: ['R', 'G', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'Y', 'Y', 'O'] ['R', 'G', 'G', 'W'] ['W', 'W', 'B', 'R'] ['B', 'B', 'B', 'Y'] ['O', 'O', 'W', 'O'] ['R', 'G', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17facd0> ['U', 'B', 'U']
+Left Face: ['R', 'R', 'Y', 'O'] Front Face: ['B', 'G', 'W', 'G'] Right Face: ['O', 'B', 'R', 'W'] Back Face: ['G', 'Y', 'B', 'O'] Top Face: ['W', 'O', 'W', 'G'] Down Face: ['R', 'B', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'R', 'Y', 'O'] ['B', 'G', 'W', 'G'] ['O', 'B', 'R', 'W'] ['G', 'Y', 'B', 'O'] ['W', 'O', 'W', 'G'] ['R', 'B', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17fb110> ['U', 'B', 'D']
+Left Face: ['G', 'Y', 'G', 'G'] Front Face: ['R', 'R', 'R', 'W'] Right Face: ['B', 'W', 'O', 'B'] Back Face: ['B', 'O', 'O', 'Y'] Top Face: ['O', 'G', 'W', 'W'] Down Face: ['Y', 'R', 'Y', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'Y', 'G', 'G'] ['R', 'R', 'R', 'W'] ['B', 'W', 'O', 'B'] ['B', 'O', 'O', 'Y'] ['O', 'G', 'W', 'W'] ['Y', 'R', 'Y', 'B']
+<__main__.RubiksState object at 0x75f17fb550> ['U', 'B', 'F']
+Left Face: ['Y', 'Y', 'Y', 'Y'] Front Face: ['G', 'G', 'R', 'R'] Right Face: ['W', 'W', 'W', 'W'] Back Face: ['B', 'O', 'B', 'O'] Top Face: ['O', 'G', 'O', 'G'] Down Face: ['R', 'B', 'R', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'Y'] ['G', 'G', 'R', 'R'] ['W', 'W', 'W', 'W'] ['B', 'O', 'B', 'O'] ['O', 'G', 'O', 'G'] ['R', 'B', 'R', 'B']
+<__main__.RubiksState object at 0x75f17fb990> ['U', 'B', 'B']
+Left Face: ['G', 'R', 'B', 'O'] Front Face: ['R', 'G', 'R', 'G'] Right Face: ['B', 'O', 'R', 'G'] Back Face: ['B', 'B', 'O', 'O'] Top Face: ['Y', 'Y', 'W', 'W'] Down Face: ['W', 'W', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'R', 'B', 'O'] ['R', 'G', 'R', 'G'] ['B', 'O', 'R', 'G'] ['B', 'B', 'O', 'O'] ['Y', 'Y', 'W', 'W'] ['W', 'W', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17cf450> ['D', 'L', 'L']
+Left Face: ['G', 'G', 'O', 'O'] Front Face: ['O', 'B', 'G', 'R'] Right Face: ['R', 'R', 'B', 'B'] Back Face: ['R', 'B', 'G', 'O'] Top Face: ['Y', 'W', 'Y', 'W'] Down Face: ['W', 'Y', 'W', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'O', 'O'] ['O', 'B', 'G', 'R'] ['R', 'R', 'B', 'B'] ['R', 'B', 'G', 'O'] ['Y', 'W', 'Y', 'W'] ['W', 'Y', 'W', 'Y']
+<__main__.RubiksState object at 0x75f17fbdd0> ['D', 'L', 'R']
+Left Face: ['O', 'G', 'G', 'O'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['R', 'B', 'R', 'B'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['O', 'O', 'B', 'B'] Down Face: ['R', 'R', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'G', 'O'] ['W', 'W', 'W', 'W'] ['R', 'B', 'R', 'B'] ['Y', 'Y', 'Y', 'Y'] ['O', 'O', 'B', 'B'] ['R', 'R', 'G', 'G']
+<__main__.RubiksState object at 0x75f17fc250> ['D', 'L', 'U']
+Left Face: ['G', 'W', 'G', 'O'] Front Face: ['R', 'W', 'R', 'R'] Right Face: ['B', 'Y', 'B', 'B'] Back Face: ['O', 'G', 'Y', 'O'] Top Face: ['B', 'O', 'W', 'W'] Down Face: ['R', 'Y', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'W', 'G', 'O'] ['R', 'W', 'R', 'R'] ['B', 'Y', 'B', 'B'] ['O', 'G', 'Y', 'O'] ['B', 'O', 'W', 'W'] ['R', 'Y', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17fc690> ['D', 'L', 'D']
+Left Face: ['O', 'G', 'W', 'R'] Front Face: ['W', 'B', 'G', 'B'] Right Face: ['R', 'R', 'O', 'Y'] Back Face: ['Y', 'B', 'O', 'G'] Top Face: ['O', 'W', 'B', 'W'] Down Face: ['G', 'R', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'W', 'R'] ['W', 'B', 'G', 'B'] ['R', 'R', 'O', 'Y'] ['Y', 'B', 'O', 'G'] ['O', 'W', 'B', 'W'] ['G', 'R', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17fcad0> ['D', 'L', 'F']
+Left Face: ['G', 'G', 'G', 'Y'] Front Face: ['W', 'R', 'W', 'G'] Right Face: ['B', 'R', 'W', 'B'] Back Face: ['Y', 'B', 'Y', 'O'] Top Face: ['O', 'W', 'O', 'O'] Down Face: ['R', 'Y', 'B', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'Y'] ['W', 'R', 'W', 'G'] ['B', 'R', 'W', 'B'] ['Y', 'B', 'Y', 'O'] ['O', 'W', 'O', 'O'] ['R', 'Y', 'B', 'R']
+<__main__.RubiksState object at 0x75f17fcf10> ['D', 'L', 'B']
+Left Face: ['O', 'R', 'Y', 'O'] Front Face: ['W', 'W', 'G', 'R'] Right Face: ['R', 'O', 'B', 'W'] Back Face: ['Y', 'Y', 'O', 'B'] Top Face: ['G', 'G', 'B', 'W'] Down Face: ['B', 'R', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'R', 'Y', 'O'] ['W', 'W', 'G', 'R'] ['R', 'O', 'B', 'W'] ['Y', 'Y', 'O', 'B'] ['G', 'G', 'B', 'W'] ['B', 'R', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17be910> ['D', 'R', 'L']
+Left Face: ['O', 'G', 'G', 'O'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['R', 'B', 'R', 'B'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['O', 'O', 'B', 'B'] Down Face: ['R', 'R', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'G', 'O'] ['W', 'W', 'W', 'W'] ['R', 'B', 'R', 'B'] ['Y', 'Y', 'Y', 'Y'] ['O', 'O', 'B', 'B'] ['R', 'R', 'G', 'G']
+<__main__.RubiksState object at 0x75f17fd350> ['D', 'R', 'R']
+Left Face: ['O', 'O', 'G', 'G'] Front Face: ['G', 'R', 'O', 'B'] Right Face: ['B', 'B', 'R', 'R'] Back Face: ['B', 'R', 'O', 'G'] Top Face: ['W', 'Y', 'W', 'Y'] Down Face: ['Y', 'W', 'Y', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'G', 'G'] ['G', 'R', 'O', 'B'] ['B', 'B', 'R', 'R'] ['B', 'R', 'O', 'G'] ['W', 'Y', 'W', 'Y'] ['Y', 'W', 'Y', 'W']
+<__main__.RubiksState object at 0x75f17fd790> ['D', 'R', 'U']
+Left Face: ['W', 'G', 'G', 'G'] Front Face: ['R', 'R', 'B', 'W'] Right Face: ['Y', 'B', 'R', 'B'] Back Face: ['O', 'O', 'O', 'Y'] Top Face: ['W', 'W', 'B', 'O'] Down Face: ['Y', 'R', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'G', 'G', 'G'] ['R', 'R', 'B', 'W'] ['Y', 'B', 'R', 'B'] ['O', 'O', 'O', 'Y'] ['W', 'W', 'B', 'O'] ['Y', 'R', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17fdbd0> ['D', 'R', 'D']
+Left Face: ['O', 'O', 'R', 'W'] Front Face: ['G', 'R', 'W', 'B'] Right Face: ['R', 'B', 'Y', 'O'] Back Face: ['B', 'Y', 'G', 'G'] Top Face: ['W', 'O', 'W', 'B'] Down Face: ['Y', 'Y', 'G', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'R', 'W'] ['G', 'R', 'W', 'B'] ['R', 'B', 'Y', 'O'] ['B', 'Y', 'G', 'G'] ['W', 'O', 'W', 'B'] ['Y', 'Y', 'G', 'R']
+<__main__.RubiksState object at 0x75f17fe010> ['D', 'R', 'F']
+Left Face: ['Y', 'O', 'G', 'G'] Front Face: ['R', 'W', 'G', 'W'] Right Face: ['W', 'B', 'B', 'B'] Back Face: ['B', 'Y', 'O', 'Y'] Top Face: ['W', 'O', 'G', 'O'] Down Face: ['Y', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'G', 'G'] ['R', 'W', 'G', 'W'] ['W', 'B', 'B', 'B'] ['B', 'Y', 'O', 'Y'] ['W', 'O', 'G', 'O'] ['Y', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f17fe450> ['D', 'R', 'B']
+Left Face: ['O', 'Y', 'R', 'G'] Front Face: ['G', 'R', 'W', 'W'] Right Face: ['R', 'W', 'R', 'O'] Back Face: ['O', 'B', 'Y', 'Y'] Top Face: ['G', 'O', 'W', 'B'] Down Face: ['B', 'B', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'R', 'G'] ['G', 'R', 'W', 'W'] ['R', 'W', 'R', 'O'] ['O', 'B', 'Y', 'Y'] ['G', 'O', 'W', 'B'] ['B', 'B', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17cf8d0> ['D', 'U', 'L']
+Left Face: ['G', 'G', 'G', 'G'] Front Face: ['W', 'W', 'R', 'R'] Right Face: ['B', 'B', 'B', 'B'] Back Face: ['Y', 'O', 'Y', 'O'] Top Face: ['O', 'W', 'O', 'W'] Down Face: ['R', 'Y', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'G'] ['W', 'W', 'R', 'R'] ['B', 'B', 'B', 'B'] ['Y', 'O', 'Y', 'O'] ['O', 'W', 'O', 'W'] ['R', 'Y', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17fe890> ['D', 'U', 'R']
+Left Face: ['G', 'G', 'G', 'G'] Front Face: ['R', 'R', 'W', 'W'] Right Face: ['B', 'B', 'B', 'B'] Back Face: ['O', 'Y', 'O', 'Y'] Top Face: ['W', 'O', 'W', 'O'] Down Face: ['Y', 'R', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'G'] ['R', 'R', 'W', 'W'] ['B', 'B', 'B', 'B'] ['O', 'Y', 'O', 'Y'] ['W', 'O', 'W', 'O'] ['Y', 'R', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17fecd0> ['D', 'U', 'U']
+Left Face: ['R', 'R', 'G', 'G'] Front Face: ['B', 'R', 'B', 'R'] Right Face: ['O', 'O', 'B', 'B'] Back Face: ['G', 'G', 'O', 'O'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'R', 'G', 'G'] ['B', 'R', 'B', 'R'] ['O', 'O', 'B', 'B'] ['G', 'G', 'O', 'O'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17ff110> ['D', 'U', 'D']
+Left Face: ['G', 'G', 'R', 'R'] Front Face: ['R', 'B', 'R', 'B'] Right Face: ['B', 'B', 'O', 'O'] Back Face: ['O', 'O', 'G', 'G'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'R', 'R'] ['R', 'B', 'R', 'B'] ['B', 'B', 'O', 'O'] ['O', 'O', 'G', 'G'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17ff550> ['D', 'U', 'F']
+Left Face: ['Y', 'G', 'G', 'Y'] Front Face: ['R', 'R', 'R', 'R'] Right Face: ['W', 'B', 'W', 'B'] Back Face: ['O', 'O', 'O', 'O'] Top Face: ['W', 'W', 'G', 'G'] Down Face: ['Y', 'Y', 'B', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'G', 'Y'] ['R', 'R', 'R', 'R'] ['W', 'B', 'W', 'B'] ['O', 'O', 'O', 'O'] ['W', 'W', 'G', 'G'] ['Y', 'Y', 'B', 'B']
+<__main__.RubiksState object at 0x75f17ff990> ['D', 'U', 'B']
+Left Face: ['G', 'Y', 'Y', 'G'] Front Face: ['R', 'R', 'R', 'R'] Right Face: ['B', 'W', 'B', 'W'] Back Face: ['O', 'O', 'O', 'O'] Top Face: ['G', 'G', 'W', 'W'] Down Face: ['B', 'B', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'Y', 'Y', 'G'] ['R', 'R', 'R', 'R'] ['B', 'W', 'B', 'W'] ['O', 'O', 'O', 'O'] ['G', 'G', 'W', 'W'] ['B', 'B', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17cfd10> ['D', 'D', 'L']
+Left Face: ['O', 'R', 'R', 'O'] Front Face: ['W', 'W', 'G', 'B'] Right Face: ['R', 'R', 'O', 'O'] Back Face: ['Y', 'B', 'Y', 'G'] Top Face: ['G', 'W', 'B', 'W'] Down Face: ['B', 'Y', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'R', 'R', 'O'] ['W', 'W', 'G', 'B'] ['R', 'R', 'O', 'O'] ['Y', 'B', 'Y', 'G'] ['G', 'W', 'B', 'W'] ['B', 'Y', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17ffdd0> ['D', 'D', 'R']
+Left Face: ['O', 'O', 'R', 'R'] Front Face: ['G', 'B', 'W', 'W'] Right Face: ['R', 'O', 'R', 'O'] Back Face: ['B', 'Y', 'G', 'Y'] Top Face: ['W', 'G', 'W', 'B'] Down Face: ['Y', 'B', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'R', 'R'] ['G', 'B', 'W', 'W'] ['R', 'O', 'R', 'O'] ['B', 'Y', 'G', 'Y'] ['W', 'G', 'W', 'B'] ['Y', 'B', 'Y', 'G']
+<__main__.RubiksState object at 0x75f1800250> ['D', 'D', 'U']
+Left Face: ['G', 'G', 'R', 'R'] Front Face: ['R', 'B', 'R', 'B'] Right Face: ['B', 'B', 'O', 'O'] Back Face: ['O', 'O', 'G', 'G'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'R', 'R'] ['R', 'B', 'R', 'B'] ['B', 'B', 'O', 'O'] ['O', 'O', 'G', 'G'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f1800690> ['D', 'D', 'D']
+Left Face: ['O', 'O', 'B', 'B'] Front Face: ['G', 'O', 'G', 'O'] Right Face: ['R', 'R', 'G', 'G'] Back Face: ['B', 'B', 'R', 'R'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'B', 'B'] ['G', 'O', 'G', 'O'] ['R', 'R', 'G', 'G'] ['B', 'B', 'R', 'R'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f1800ad0> ['D', 'D', 'F']
+Left Face: ['Y', 'O', 'R', 'Y'] Front Face: ['B', 'B', 'G', 'G'] Right Face: ['W', 'R', 'W', 'O'] Back Face: ['B', 'B', 'G', 'G'] Top Face: ['W', 'W', 'R', 'O'] Down Face: ['Y', 'Y', 'O', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'R', 'Y'] ['B', 'B', 'G', 'G'] ['W', 'R', 'W', 'O'] ['B', 'B', 'G', 'G'] ['W', 'W', 'R', 'O'] ['Y', 'Y', 'O', 'R']
+<__main__.RubiksState object at 0x75f1800f10> ['D', 'D', 'B']
+Left Face: ['O', 'Y', 'Y', 'R'] Front Face: ['G', 'B', 'G', 'B'] Right Face: ['R', 'W', 'O', 'W'] Back Face: ['G', 'B', 'G', 'B'] Top Face: ['R', 'O', 'W', 'W'] Down Face: ['O', 'R', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'Y', 'R'] ['G', 'B', 'G', 'B'] ['R', 'W', 'O', 'W'] ['G', 'B', 'G', 'B'] ['R', 'O', 'W', 'W'] ['O', 'R', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17d0190> ['D', 'F', 'L']
+Left Face: ['O', 'G', 'Y', 'Y'] Front Face: ['W', 'G', 'G', 'G'] Right Face: ['W', 'R', 'W', 'B'] Back Face: ['Y', 'B', 'B', 'O'] Top Face: ['O', 'W', 'B', 'O'] Down Face: ['R', 'Y', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'Y', 'Y'] ['W', 'G', 'G', 'G'] ['W', 'R', 'W', 'B'] ['Y', 'B', 'B', 'O'] ['O', 'W', 'B', 'O'] ['R', 'Y', 'R', 'R']
+<__main__.RubiksState object at 0x75f1801350> ['D', 'F', 'R']
+Left Face: ['Y', 'O', 'G', 'Y'] Front Face: ['R', 'R', 'W', 'O'] Right Face: ['R', 'B', 'W', 'W'] Back Face: ['B', 'Y', 'O', 'R'] Top Face: ['W', 'O', 'G', 'B'] Down Face: ['Y', 'G', 'B', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'G', 'Y'] ['R', 'R', 'W', 'O'] ['R', 'B', 'W', 'W'] ['B', 'Y', 'O', 'R'] ['W', 'O', 'G', 'B'] ['Y', 'G', 'B', 'G']
+<__main__.RubiksState object at 0x75f1801790> ['D', 'F', 'U']
+Left Face: ['G', 'R', 'G', 'Y'] Front Face: ['W', 'R', 'R', 'G'] Right Face: ['B', 'B', 'W', 'B'] Back Face: ['Y', 'O', 'O', 'O'] Top Face: ['G', 'W', 'O', 'W'] Down Face: ['Y', 'Y', 'B', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'R', 'G', 'Y'] ['W', 'R', 'R', 'G'] ['B', 'B', 'W', 'B'] ['Y', 'O', 'O', 'O'] ['G', 'W', 'O', 'W'] ['Y', 'Y', 'B', 'R']
+<__main__.RubiksState object at 0x75f1801bd0> ['D', 'F', 'D']
+Left Face: ['Y', 'O', 'R', 'G'] Front Face: ['R', 'W', 'G', 'B'] Right Face: ['W', 'R', 'O', 'O'] Back Face: ['B', 'B', 'Y', 'G'] Top Face: ['W', 'W', 'G', 'O'] Down Face: ['B', 'Y', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'R', 'G'] ['R', 'W', 'G', 'B'] ['W', 'R', 'O', 'O'] ['B', 'B', 'Y', 'G'] ['W', 'W', 'G', 'O'] ['B', 'Y', 'R', 'Y']
+<__main__.RubiksState object at 0x75f1802010> ['D', 'F', 'F']
+Left Face: ['B', 'O', 'G', 'R'] Front Face: ['R', 'G', 'R', 'G'] Right Face: ['G', 'R', 'O', 'B'] Back Face: ['B', 'B', 'O', 'O'] Top Face: ['W', 'W', 'Y', 'Y'] Down Face: ['Y', 'Y', 'W', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['B', 'O', 'G', 'R'] ['R', 'G', 'R', 'G'] ['G', 'R', 'O', 'B'] ['B', 'B', 'O', 'O'] ['W', 'W', 'Y', 'Y'] ['Y', 'Y', 'W', 'W']
+<__main__.RubiksState object at 0x75f1802450> ['D', 'F', 'B']
+Left Face: ['Y', 'Y', 'Y', 'Y'] Front Face: ['R', 'R', 'G', 'G'] Right Face: ['W', 'W', 'W', 'W'] Back Face: ['O', 'B', 'O', 'B'] Top Face: ['G', 'O', 'G', 'O'] Down Face: ['B', 'R', 'B', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'Y'] ['R', 'R', 'G', 'G'] ['W', 'W', 'W', 'W'] ['O', 'B', 'O', 'B'] ['G', 'O', 'G', 'O'] ['B', 'R', 'B', 'R']
+<__main__.RubiksState object at 0x75f17d05d0> ['D', 'B', 'L']
+Left Face: ['Y', 'Y', 'G', 'O'] Front Face: ['G', 'W', 'G', 'R'] Right Face: ['R', 'W', 'B', 'W'] Back Face: ['B', 'B', 'Y', 'B'] Top Face: ['O', 'O', 'O', 'W'] Down Face: ['R', 'R', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'G', 'O'] ['G', 'W', 'G', 'R'] ['R', 'W', 'B', 'W'] ['B', 'B', 'Y', 'B'] ['O', 'O', 'O', 'W'] ['R', 'R', 'G', 'Y']
+<__main__.RubiksState object at 0x75f1802890> ['D', 'B', 'R']
+Left Face: ['O', 'Y', 'Y', 'G'] Front Face: ['G', 'R', 'O', 'W'] Right Face: ['W', 'W', 'R', 'B'] Back Face: ['O', 'R', 'O', 'Y'] Top Face: ['G', 'B', 'W', 'B'] Down Face: ['B', 'R', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'Y', 'G'] ['G', 'R', 'O', 'W'] ['W', 'W', 'R', 'B'] ['O', 'R', 'O', 'Y'] ['G', 'B', 'W', 'B'] ['B', 'R', 'Y', 'G']
+<__main__.RubiksState object at 0x75f1802cd0> ['D', 'B', 'U']
+Left Face: ['G', 'G', 'Y', 'G'] Front Face: ['R', 'R', 'W', 'R'] Right Face: ['B', 'O', 'B', 'W'] Back Face: ['O', 'Y', 'O', 'B'] Top Face: ['W', 'G', 'W', 'O'] Down Face: ['B', 'R', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'Y', 'G'] ['R', 'R', 'W', 'R'] ['B', 'O', 'B', 'W'] ['O', 'Y', 'O', 'B'] ['W', 'G', 'W', 'O'] ['B', 'R', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f1803110> ['D', 'B', 'D']
+Left Face: ['O', 'Y', 'R', 'R'] Front Face: ['G', 'B', 'G', 'W'] Right Face: ['R', 'W', 'B', 'O'] Back Face: ['O', 'B', 'G', 'Y'] Top Face: ['G', 'O', 'W', 'W'] Down Face: ['Y', 'B', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'R', 'R'] ['G', 'B', 'G', 'W'] ['R', 'W', 'B', 'O'] ['O', 'B', 'G', 'Y'] ['G', 'O', 'W', 'W'] ['Y', 'B', 'Y', 'R']
+<__main__.RubiksState object at 0x75f1803550> ['D', 'B', 'F']
+Left Face: ['Y', 'Y', 'Y', 'Y'] Front Face: ['R', 'R', 'G', 'G'] Right Face: ['W', 'W', 'W', 'W'] Back Face: ['O', 'B', 'O', 'B'] Top Face: ['G', 'O', 'G', 'O'] Down Face: ['B', 'R', 'B', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'Y'] ['R', 'R', 'G', 'G'] ['W', 'W', 'W', 'W'] ['O', 'B', 'O', 'B'] ['G', 'O', 'G', 'O'] ['B', 'R', 'B', 'R']
+<__main__.RubiksState object at 0x75f1803990> ['D', 'B', 'B']
+Left Face: ['O', 'B', 'R', 'G'] Front Face: ['G', 'R', 'G', 'R'] Right Face: ['R', 'G', 'B', 'O'] Back Face: ['O', 'O', 'B', 'B'] Top Face: ['Y', 'Y', 'W', 'W'] Down Face: ['W', 'W', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'B', 'R', 'G'] ['G', 'R', 'G', 'R'] ['R', 'G', 'B', 'O'] ['O', 'O', 'B', 'B'] ['Y', 'Y', 'W', 'W'] ['W', 'W', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17d0a10> ['F', 'L', 'L']
+Left Face: ['O', 'Y', 'Y', 'O'] Front Face: ['B', 'B', 'G', 'G'] Right Face: ['W', 'R', 'W', 'R'] Back Face: ['G', 'B', 'G', 'B'] Top Face: ['R', 'W', 'Y', 'O'] Down Face: ['O', 'Y', 'W', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'Y', 'O'] ['B', 'B', 'G', 'G'] ['W', 'R', 'W', 'R'] ['G', 'B', 'G', 'B'] ['R', 'W', 'Y', 'O'] ['O', 'Y', 'W', 'R']
+<__main__.RubiksState object at 0x75f1803dd0> ['F', 'L', 'R']
+Left Face: ['O', 'O', 'Y', 'Y'] Front Face: ['W', 'O', 'W', 'O'] Right Face: ['R', 'R', 'W', 'W'] Back Face: ['Y', 'Y', 'R', 'R'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'Y', 'Y'] ['W', 'O', 'W', 'O'] ['R', 'R', 'W', 'W'] ['Y', 'Y', 'R', 'R'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f150c250> ['F', 'L', 'U']
+Left Face: ['G', 'W', 'Y', 'Y'] Front Face: ['W', 'O', 'R', 'G'] Right Face: ['B', 'Y', 'W', 'R'] Back Face: ['O', 'O', 'R', 'B'] Top Face: ['B', 'B', 'O', 'W'] Down Face: ['G', 'Y', 'G', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'W', 'Y', 'Y'] ['W', 'O', 'R', 'G'] ['B', 'Y', 'W', 'R'] ['O', 'O', 'R', 'B'] ['B', 'B', 'O', 'W'] ['G', 'Y', 'G', 'R']
+<__main__.RubiksState object at 0x75f150c690> ['F', 'L', 'D']
+Left Face: ['O', 'O', 'O', 'G'] Front Face: ['W', 'W', 'G', 'R'] Right Face: ['W', 'R', 'B', 'R'] Back Face: ['Y', 'B', 'Y', 'Y'] Top Face: ['B', 'W', 'B', 'O'] Down Face: ['G', 'G', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'G'] ['W', 'W', 'G', 'R'] ['W', 'R', 'B', 'R'] ['Y', 'B', 'Y', 'Y'] ['B', 'W', 'B', 'O'] ['G', 'G', 'R', 'Y']
+<__main__.RubiksState object at 0x75f150cad0> ['F', 'L', 'F']
+Left Face: ['G', 'O', 'Y', 'R'] Front Face: ['O', 'G', 'W', 'G'] Right Face: ['B', 'R', 'O', 'R'] Back Face: ['Y', 'B', 'R', 'B'] Top Face: ['B', 'W', 'Y', 'O'] Down Face: ['G', 'Y', 'W', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'Y', 'R'] ['O', 'G', 'W', 'G'] ['B', 'R', 'O', 'R'] ['Y', 'B', 'R', 'B'] ['B', 'W', 'Y', 'O'] ['G', 'Y', 'W', 'W']
+<__main__.RubiksState object at 0x75f150cf10> ['F', 'L', 'B']
+Left Face: ['O', 'G', 'Y', 'Y'] Front Face: ['W', 'O', 'G', 'G'] Right Face: ['W', 'B', 'W', 'W'] Back Face: ['R', 'Y', 'B', 'B'] Top Face: ['Y', 'O', 'B', 'O'] Down Face: ['R', 'R', 'G', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'Y', 'Y'] ['W', 'O', 'G', 'G'] ['W', 'B', 'W', 'W'] ['R', 'Y', 'B', 'B'] ['Y', 'O', 'B', 'O'] ['R', 'R', 'G', 'R']
+<__main__.RubiksState object at 0x75f17bed10> ['F', 'R', 'L']
+Left Face: ['O', 'O', 'Y', 'Y'] Front Face: ['W', 'O', 'W', 'O'] Right Face: ['R', 'R', 'W', 'W'] Back Face: ['Y', 'Y', 'R', 'R'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'Y', 'Y'] ['W', 'O', 'W', 'O'] ['R', 'R', 'W', 'W'] ['Y', 'Y', 'R', 'R'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f150d350> ['F', 'R', 'R']
+Left Face: ['Y', 'O', 'O', 'Y'] Front Face: ['G', 'G', 'B', 'B'] Right Face: ['R', 'W', 'R', 'W'] Back Face: ['B', 'G', 'B', 'G'] Top Face: ['W', 'R', 'O', 'Y'] Down Face: ['Y', 'O', 'R', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'O', 'Y'] ['G', 'G', 'B', 'B'] ['R', 'W', 'R', 'W'] ['B', 'G', 'B', 'G'] ['W', 'R', 'O', 'Y'] ['Y', 'O', 'R', 'W']
+<__main__.RubiksState object at 0x75f150d790> ['F', 'R', 'U']
+Left Face: ['W', 'G', 'O', 'Y'] Front Face: ['R', 'G', 'R', 'O'] Right Face: ['Y', 'B', 'W', 'W'] Back Face: ['Y', 'O', 'B', 'R'] Top Face: ['O', 'W', 'B', 'B'] Down Face: ['Y', 'G', 'R', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'G', 'O', 'Y'] ['R', 'G', 'R', 'O'] ['Y', 'B', 'W', 'W'] ['Y', 'O', 'B', 'R'] ['O', 'W', 'B', 'B'] ['Y', 'G', 'R', 'G']
+<__main__.RubiksState object at 0x75f150dbd0> ['F', 'R', 'D']
+Left Face: ['Y', 'O', 'G', 'O'] Front Face: ['G', 'W', 'W', 'W'] Right Face: ['R', 'R', 'R', 'B'] Back Face: ['B', 'Y', 'Y', 'O'] Top Face: ['W', 'B', 'O', 'B'] Down Face: ['R', 'Y', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'G', 'O'] ['G', 'W', 'W', 'W'] ['R', 'R', 'R', 'B'] ['B', 'Y', 'Y', 'O'] ['W', 'B', 'O', 'B'] ['R', 'Y', 'G', 'G']
+<__main__.RubiksState object at 0x75f150e010> ['F', 'R', 'F']
+Left Face: ['R', 'O', 'O', 'G'] Front Face: ['G', 'O', 'G', 'W'] Right Face: ['O', 'R', 'B', 'W'] Back Face: ['B', 'Y', 'B', 'R'] Top Face: ['W', 'B', 'Y', 'Y'] Down Face: ['Y', 'G', 'W', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'O', 'O', 'G'] ['G', 'O', 'G', 'W'] ['O', 'R', 'B', 'W'] ['B', 'Y', 'B', 'R'] ['W', 'B', 'Y', 'Y'] ['Y', 'G', 'W', 'R']
+<__main__.RubiksState object at 0x75f150e450> ['F', 'R', 'B']
+Left Face: ['Y', 'Y', 'G', 'Y'] Front Face: ['G', 'G', 'W', 'O'] Right Face: ['R', 'W', 'W', 'B'] Back Face: ['B', 'B', 'R', 'Y'] Top Face: ['O', 'O', 'O', 'B'] Down Face: ['W', 'R', 'R', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'G', 'Y'] ['G', 'G', 'W', 'O'] ['R', 'W', 'W', 'B'] ['B', 'B', 'R', 'Y'] ['O', 'O', 'O', 'B'] ['W', 'R', 'R', 'G']
+<__main__.RubiksState object at 0x75f17d0e90> ['F', 'U', 'L']
+Left Face: ['G', 'O', 'Y', 'G'] Front Face: ['O', 'O', 'R', 'G'] Right Face: ['B', 'B', 'W', 'R'] Back Face: ['Y', 'O', 'R', 'B'] Top Face: ['B', 'W', 'Y', 'W'] Down Face: ['G', 'Y', 'W', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'Y', 'G'] ['O', 'O', 'R', 'G'] ['B', 'B', 'W', 'R'] ['Y', 'O', 'R', 'B'] ['B', 'W', 'Y', 'W'] ['G', 'Y', 'W', 'R']
+<__main__.RubiksState object at 0x75f150e890> ['F', 'U', 'R']
+Left Face: ['G', 'G', 'O', 'Y'] Front Face: ['W', 'G', 'W', 'W'] Right Face: ['B', 'R', 'B', 'W'] Back Face: ['Y', 'Y', 'B', 'R'] Top Face: ['O', 'B', 'O', 'O'] Down Face: ['Y', 'G', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'O', 'Y'] ['W', 'G', 'W', 'W'] ['B', 'R', 'B', 'W'] ['Y', 'Y', 'B', 'R'] ['O', 'B', 'O', 'O'] ['Y', 'G', 'R', 'R']
+<__main__.RubiksState object at 0x75f150ecd0> ['F', 'U', 'U']
+Left Face: ['R', 'W', 'O', 'Y'] Front Face: ['B', 'G', 'B', 'G'] Right Face: ['O', 'Y', 'W', 'R'] Back Face: ['G', 'G', 'B', 'B'] Top Face: ['O', 'O', 'W', 'W'] Down Face: ['Y', 'Y', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'W', 'O', 'Y'] ['B', 'G', 'B', 'G'] ['O', 'Y', 'W', 'R'] ['G', 'G', 'B', 'B'] ['O', 'O', 'W', 'W'] ['Y', 'Y', 'R', 'R']
+<__main__.RubiksState object at 0x75f150f110> ['F', 'U', 'D']
+Left Face: ['G', 'G', 'G', 'G'] Front Face: ['W', 'W', 'R', 'R'] Right Face: ['B', 'B', 'B', 'B'] Back Face: ['Y', 'O', 'Y', 'O'] Top Face: ['O', 'W', 'O', 'W'] Down Face: ['R', 'Y', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'G'] ['W', 'W', 'R', 'R'] ['B', 'B', 'B', 'B'] ['Y', 'O', 'Y', 'O'] ['O', 'W', 'O', 'W'] ['R', 'Y', 'R', 'Y']
+<__main__.RubiksState object at 0x75f150f550> ['F', 'U', 'F']
+Left Face: ['R', 'G', 'O', 'R'] Front Face: ['G', 'G', 'W', 'R'] Right Face: ['O', 'B', 'W', 'R'] Back Face: ['Y', 'O', 'B', 'B'] Top Face: ['O', 'W', 'Y', 'G'] Down Face: ['Y', 'Y', 'W', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'G', 'O', 'R'] ['G', 'G', 'W', 'R'] ['O', 'B', 'W', 'R'] ['Y', 'O', 'B', 'B'] ['O', 'W', 'Y', 'G'] ['Y', 'Y', 'W', 'B']
+<__main__.RubiksState object at 0x75f150f990> ['F', 'U', 'B']
+Left Face: ['G', 'Y', 'Y', 'Y'] Front Face: ['W', 'G', 'R', 'G'] Right Face: ['B', 'O', 'W', 'W'] Back Face: ['B', 'Y', 'B', 'O'] Top Face: ['O', 'G', 'O', 'W'] Down Face: ['R', 'B', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'Y', 'Y', 'Y'] ['W', 'G', 'R', 'G'] ['B', 'O', 'W', 'W'] ['B', 'Y', 'B', 'O'] ['O', 'G', 'O', 'W'] ['R', 'B', 'R', 'R']
+<__main__.RubiksState object at 0x75f17d12d0> ['F', 'D', 'L']
+Left Face: ['O', 'G', 'G', 'Y'] Front Face: ['W', 'O', 'G', 'R'] Right Face: ['W', 'R', 'B', 'B'] Back Face: ['R', 'B', 'R', 'O'] Top Face: ['Y', 'W', 'B', 'O'] Down Face: ['W', 'Y', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'G', 'Y'] ['W', 'O', 'G', 'R'] ['W', 'R', 'B', 'B'] ['R', 'B', 'R', 'O'] ['Y', 'W', 'B', 'O'] ['W', 'Y', 'G', 'Y']
+<__main__.RubiksState object at 0x75f150fdd0> ['F', 'D', 'R']
+Left Face: ['Y', 'O', 'G', 'G'] Front Face: ['G', 'W', 'W', 'O'] Right Face: ['R', 'B', 'W', 'B'] Back Face: ['B', 'Y', 'Y', 'Y'] Top Face: ['W', 'O', 'O', 'B'] Down Face: ['R', 'R', 'R', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'G', 'G'] ['G', 'W', 'W', 'O'] ['R', 'B', 'W', 'B'] ['B', 'Y', 'Y', 'Y'] ['W', 'O', 'O', 'B'] ['R', 'R', 'R', 'G']
+<__main__.RubiksState object at 0x75f1510250> ['F', 'D', 'U']
+Left Face: ['G', 'G', 'G', 'G'] Front Face: ['W', 'W', 'R', 'R'] Right Face: ['B', 'B', 'B', 'B'] Back Face: ['Y', 'O', 'Y', 'O'] Top Face: ['O', 'W', 'O', 'W'] Down Face: ['R', 'Y', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'G'] ['W', 'W', 'R', 'R'] ['B', 'B', 'B', 'B'] ['Y', 'O', 'Y', 'O'] ['O', 'W', 'O', 'W'] ['R', 'Y', 'R', 'Y']
+<__main__.RubiksState object at 0x75f1510690> ['F', 'D', 'D']
+Left Face: ['Y', 'O', 'W', 'R'] Front Face: ['G', 'B', 'G', 'B'] Right Face: ['W', 'R', 'O', 'Y'] Back Face: ['B', 'B', 'G', 'G'] Top Face: ['W', 'W', 'O', 'O'] Down Face: ['R', 'R', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'W', 'R'] ['G', 'B', 'G', 'B'] ['W', 'R', 'O', 'Y'] ['B', 'B', 'G', 'G'] ['W', 'W', 'O', 'O'] ['R', 'R', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f1510ad0> ['F', 'D', 'F']
+Left Face: ['R', 'O', 'G', 'Y'] Front Face: ['W', 'R', 'G', 'G'] Right Face: ['O', 'R', 'O', 'B'] Back Face: ['B', 'B', 'Y', 'O'] Top Face: ['W', 'W', 'G', 'Y'] Down Face: ['R', 'Y', 'B', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'O', 'G', 'Y'] ['W', 'R', 'G', 'G'] ['O', 'R', 'O', 'B'] ['B', 'B', 'Y', 'O'] ['W', 'W', 'G', 'Y'] ['R', 'Y', 'B', 'W']
+<__main__.RubiksState object at 0x75f1510f10> ['F', 'D', 'B']
+Left Face: ['Y', 'R', 'Y', 'G'] Front Face: ['G', 'W', 'G', 'R'] Right Face: ['W', 'W', 'B', 'W'] Back Face: ['Y', 'B', 'O', 'B'] Top Face: ['G', 'O', 'O', 'O'] Down Face: ['B', 'R', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'R', 'Y', 'G'] ['G', 'W', 'G', 'R'] ['W', 'W', 'B', 'W'] ['Y', 'B', 'O', 'B'] ['G', 'O', 'O', 'O'] ['B', 'R', 'R', 'Y']
+<__main__.RubiksState object at 0x75f17d1710> ['F', 'F', 'L']
+Left Face: ['O', 'O', 'R', 'R'] Front Face: ['W', 'Y', 'G', 'G'] Right Face: ['O', 'R', 'O', 'R'] Back Face: ['Y', 'B', 'W', 'B'] Top Face: ['B', 'W', 'B', 'Y'] Down Face: ['G', 'Y', 'G', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'R', 'R'] ['W', 'Y', 'G', 'G'] ['O', 'R', 'O', 'R'] ['Y', 'B', 'W', 'B'] ['B', 'W', 'B', 'Y'] ['G', 'Y', 'G', 'W']
+<__main__.RubiksState object at 0x75f1511350> ['F', 'F', 'R']
+Left Face: ['R', 'O', 'O', 'R'] Front Face: ['G', 'G', 'W', 'Y'] Right Face: ['R', 'R', 'O', 'O'] Back Face: ['B', 'Y', 'B', 'W'] Top Face: ['W', 'B', 'Y', 'B'] Down Face: ['Y', 'G', 'W', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'O', 'O', 'R'] ['G', 'G', 'W', 'Y'] ['R', 'R', 'O', 'O'] ['B', 'Y', 'B', 'W'] ['W', 'B', 'Y', 'B'] ['Y', 'G', 'W', 'G']
+<__main__.RubiksState object at 0x75f1511790> ['F', 'F', 'U']
+Left Face: ['G', 'G', 'O', 'R'] Front Face: ['O', 'G', 'R', 'G'] Right Face: ['B', 'B', 'O', 'R'] Back Face: ['R', 'O', 'B', 'B'] Top Face: ['Y', 'W', 'Y', 'W'] Down Face: ['Y', 'Y', 'W', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'O', 'R'] ['O', 'G', 'R', 'G'] ['B', 'B', 'O', 'R'] ['R', 'O', 'B', 'B'] ['Y', 'W', 'Y', 'W'] ['Y', 'Y', 'W', 'W']
+<__main__.RubiksState object at 0x75f1511bd0> ['F', 'F', 'D']
+Left Face: ['R', 'O', 'G', 'G'] Front Face: ['G', 'O', 'G', 'R'] Right Face: ['O', 'R', 'B', 'B'] Back Face: ['B', 'B', 'R', 'O'] Top Face: ['W', 'W', 'Y', 'Y'] Down Face: ['W', 'Y', 'W', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'O', 'G', 'G'] ['G', 'O', 'G', 'R'] ['O', 'R', 'B', 'B'] ['B', 'B', 'R', 'O'] ['W', 'W', 'Y', 'Y'] ['W', 'Y', 'W', 'Y']
+<__main__.RubiksState object at 0x75f1512010> ['F', 'F', 'F']
+Left Face: ['W', 'O', 'O', 'W'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['Y', 'R', 'Y', 'R'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['W', 'W', 'R', 'R'] Down Face: ['Y', 'Y', 'O', 'O']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'O', 'O', 'W'] ['G', 'G', 'G', 'G'] ['Y', 'R', 'Y', 'R'] ['B', 'B', 'B', 'B'] ['W', 'W', 'R', 'R'] ['Y', 'Y', 'O', 'O']
+<__main__.RubiksState object at 0x75f1512450> ['F', 'F', 'B']
+Left Face: ['R', 'Y', 'Y', 'R'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['O', 'W', 'O', 'W'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['O', 'O', 'Y', 'Y'] Down Face: ['R', 'R', 'W', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'Y', 'Y', 'R'] ['G', 'G', 'G', 'G'] ['O', 'W', 'O', 'W'] ['B', 'B', 'B', 'B'] ['O', 'O', 'Y', 'Y'] ['R', 'R', 'W', 'W']
+<__main__.RubiksState object at 0x75f17d1b50> ['F', 'B', 'L']
+Left Face: ['Y', 'Y', 'Y', 'Y'] Front Face: ['O', 'O', 'G', 'G'] Right Face: ['W', 'W', 'W', 'W'] Back Face: ['R', 'B', 'R', 'B'] Top Face: ['B', 'O', 'B', 'O'] Down Face: ['G', 'R', 'G', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'Y'] ['O', 'O', 'G', 'G'] ['W', 'W', 'W', 'W'] ['R', 'B', 'R', 'B'] ['B', 'O', 'B', 'O'] ['G', 'R', 'G', 'R']
+<__main__.RubiksState object at 0x75f1512890> ['F', 'B', 'R']
+Left Face: ['Y', 'Y', 'Y', 'Y'] Front Face: ['G', 'G', 'O', 'O'] Right Face: ['W', 'W', 'W', 'W'] Back Face: ['B', 'R', 'B', 'R'] Top Face: ['O', 'B', 'O', 'B'] Down Face: ['R', 'G', 'R', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'Y'] ['G', 'G', 'O', 'O'] ['W', 'W', 'W', 'W'] ['B', 'R', 'B', 'R'] ['O', 'B', 'O', 'B'] ['R', 'G', 'R', 'G']
+<__main__.RubiksState object at 0x75f1512cd0> ['F', 'B', 'U']
+Left Face: ['G', 'G', 'Y', 'Y'] Front Face: ['W', 'G', 'W', 'G'] Right Face: ['B', 'B', 'W', 'W'] Back Face: ['Y', 'Y', 'B', 'B'] Top Face: ['O', 'O', 'O', 'O'] Down Face: ['R', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'Y', 'Y'] ['W', 'G', 'W', 'G'] ['B', 'B', 'W', 'W'] ['Y', 'Y', 'B', 'B'] ['O', 'O', 'O', 'O'] ['R', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f1513110> ['F', 'B', 'D']
+Left Face: ['Y', 'Y', 'G', 'G'] Front Face: ['G', 'W', 'G', 'W'] Right Face: ['W', 'W', 'B', 'B'] Back Face: ['B', 'B', 'Y', 'Y'] Top Face: ['O', 'O', 'O', 'O'] Down Face: ['R', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'G', 'G'] ['G', 'W', 'G', 'W'] ['W', 'W', 'B', 'B'] ['B', 'B', 'Y', 'Y'] ['O', 'O', 'O', 'O'] ['R', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f1513550> ['F', 'B', 'F']
+Left Face: ['R', 'Y', 'Y', 'R'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['O', 'W', 'O', 'W'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['O', 'O', 'Y', 'Y'] Down Face: ['R', 'R', 'W', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'Y', 'Y', 'R'] ['G', 'G', 'G', 'G'] ['O', 'W', 'O', 'W'] ['B', 'B', 'B', 'B'] ['O', 'O', 'Y', 'Y'] ['R', 'R', 'W', 'W']
+<__main__.RubiksState object at 0x75f1513990> ['F', 'B', 'B']
+Left Face: ['Y', 'R', 'R', 'Y'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['W', 'O', 'W', 'O'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['Y', 'Y', 'O', 'O'] Down Face: ['W', 'W', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'R', 'R', 'Y'] ['G', 'G', 'G', 'G'] ['W', 'O', 'W', 'O'] ['B', 'B', 'B', 'B'] ['Y', 'Y', 'O', 'O'] ['W', 'W', 'R', 'R']
+<__main__.RubiksState object at 0x75f17d1f90> ['B', 'L', 'L']
+Left Face: ['Y', 'O', 'O', 'Y'] Front Face: ['B', 'B', 'G', 'G'] Right Face: ['R', 'W', 'R', 'W'] Back Face: ['G', 'B', 'G', 'B'] Top Face: ['Y', 'O', 'R', 'W'] Down Face: ['W', 'R', 'O', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'O', 'O', 'Y'] ['B', 'B', 'G', 'G'] ['R', 'W', 'R', 'W'] ['G', 'B', 'G', 'B'] ['Y', 'O', 'R', 'W'] ['W', 'R', 'O', 'Y']
+<__main__.RubiksState object at 0x75f1513dd0> ['B', 'L', 'R']
+Left Face: ['Y', 'Y', 'O', 'O'] Front Face: ['O', 'W', 'O', 'W'] Right Face: ['W', 'W', 'R', 'R'] Back Face: ['R', 'R', 'Y', 'Y'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'O', 'O'] ['O', 'W', 'O', 'W'] ['W', 'W', 'R', 'R'] ['R', 'R', 'Y', 'Y'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f151c250> ['B', 'L', 'U']
+Left Face: ['G', 'O', 'O', 'O'] Front Face: ['R', 'W', 'W', 'G'] Right Face: ['B', 'R', 'R', 'W'] Back Face: ['Y', 'Y', 'Y', 'B'] Top Face: ['B', 'B', 'W', 'O'] Down Face: ['G', 'R', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'O', 'O'] ['R', 'W', 'W', 'G'] ['B', 'R', 'R', 'W'] ['Y', 'Y', 'Y', 'B'] ['B', 'B', 'W', 'O'] ['G', 'R', 'G', 'Y']
+<__main__.RubiksState object at 0x75f151c690> ['B', 'L', 'D']
+Left Face: ['Y', 'Y', 'W', 'G'] Front Face: ['O', 'R', 'G', 'W'] Right Face: ['R', 'W', 'B', 'Y'] Back Face: ['R', 'B', 'O', 'O'] Top Face: ['B', 'O', 'B', 'W'] Down Face: ['G', 'G', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'W', 'G'] ['O', 'R', 'G', 'W'] ['R', 'W', 'B', 'Y'] ['R', 'B', 'O', 'O'] ['B', 'O', 'B', 'W'] ['G', 'G', 'Y', 'R']
+<__main__.RubiksState object at 0x75f151cad0> ['B', 'L', 'F']
+Left Face: ['G', 'Y', 'O', 'Y'] Front Face: ['W', 'G', 'O', 'G'] Right Face: ['B', 'W', 'W', 'W'] Back Face: ['R', 'B', 'Y', 'B'] Top Face: ['B', 'O', 'O', 'Y'] Down Face: ['G', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'Y', 'O', 'Y'] ['W', 'G', 'O', 'G'] ['B', 'W', 'W', 'W'] ['R', 'B', 'Y', 'B'] ['B', 'O', 'O', 'Y'] ['G', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f151cf10> ['B', 'L', 'B']
+Left Face: ['Y', 'G', 'R', 'O'] Front Face: ['O', 'W', 'G', 'G'] Right Face: ['R', 'B', 'R', 'O'] Back Face: ['Y', 'R', 'B', 'B'] Top Face: ['O', 'Y', 'B', 'W'] Down Face: ['W', 'W', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'R', 'O'] ['O', 'W', 'G', 'G'] ['R', 'B', 'R', 'O'] ['Y', 'R', 'B', 'B'] ['O', 'Y', 'B', 'W'] ['W', 'W', 'G', 'Y']
+<__main__.RubiksState object at 0x75f17bf110> ['B', 'R', 'L']
+Left Face: ['Y', 'Y', 'O', 'O'] Front Face: ['O', 'W', 'O', 'W'] Right Face: ['W', 'W', 'R', 'R'] Back Face: ['R', 'R', 'Y', 'Y'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'O', 'O'] ['O', 'W', 'O', 'W'] ['W', 'W', 'R', 'R'] ['R', 'R', 'Y', 'Y'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x75f151d350> ['B', 'R', 'R']
+Left Face: ['O', 'Y', 'Y', 'O'] Front Face: ['G', 'G', 'B', 'B'] Right Face: ['W', 'R', 'W', 'R'] Back Face: ['B', 'G', 'B', 'G'] Top Face: ['O', 'Y', 'W', 'R'] Down Face: ['R', 'W', 'Y', 'O']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'Y', 'O'] ['G', 'G', 'B', 'B'] ['W', 'R', 'W', 'R'] ['B', 'G', 'B', 'G'] ['O', 'Y', 'W', 'R'] ['R', 'W', 'Y', 'O']
+<__main__.RubiksState object at 0x75f151d790> ['B', 'R', 'U']
+Left Face: ['O', 'G', 'Y', 'O'] Front Face: ['W', 'G', 'W', 'W'] Right Face: ['R', 'B', 'R', 'R'] Back Face: ['O', 'Y', 'B', 'Y'] Top Face: ['W', 'O', 'B', 'B'] Down Face: ['R', 'G', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'Y', 'O'] ['W', 'G', 'W', 'W'] ['R', 'B', 'R', 'R'] ['O', 'Y', 'B', 'Y'] ['W', 'O', 'B', 'B'] ['R', 'G', 'Y', 'G']
+<__main__.RubiksState object at 0x75f151dbd0> ['B', 'R', 'D']
+Left Face: ['O', 'Y', 'G', 'W'] Front Face: ['G', 'R', 'O', 'R'] Right Face: ['W', 'W', 'Y', 'B'] Back Face: ['B', 'R', 'O', 'Y'] Top Face: ['O', 'B', 'W', 'B'] Down Face: ['Y', 'R', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'G', 'W'] ['G', 'R', 'O', 'R'] ['W', 'W', 'Y', 'B'] ['B', 'R', 'O', 'Y'] ['O', 'B', 'W', 'B'] ['Y', 'R', 'G', 'G']
+<__main__.RubiksState object at 0x75f151e010> ['B', 'R', 'F']
+Left Face: ['Y', 'Y', 'Y', 'G'] Front Face: ['G', 'W', 'G', 'O'] Right Face: ['W', 'W', 'B', 'R'] Back Face: ['B', 'R', 'B', 'Y'] Top Face: ['O', 'B', 'O', 'O'] Down Face: ['R', 'G', 'R', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'G'] ['G', 'W', 'G', 'O'] ['W', 'W', 'B', 'R'] ['B', 'R', 'B', 'Y'] ['O', 'B', 'O', 'O'] ['R', 'G', 'R', 'W']
+<__main__.RubiksState object at 0x75f151e450> ['B', 'R', 'B']
+Left Face: ['O', 'R', 'G', 'O'] Front Face: ['G', 'G', 'O', 'W'] Right Face: ['W', 'O', 'R', 'B'] Back Face: ['B', 'B', 'Y', 'R'] Top Face: ['Y', 'Y', 'W', 'B'] Down Face: ['R', 'W', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'R', 'G', 'O'] ['G', 'G', 'O', 'W'] ['W', 'O', 'R', 'B'] ['B', 'B', 'Y', 'R'] ['Y', 'Y', 'W', 'B'] ['R', 'W', 'Y', 'G']
+<__main__.RubiksState object at 0x75f17d2410> ['B', 'U', 'L']
+Left Face: ['G', 'Y', 'O', 'G'] Front Face: ['W', 'W', 'W', 'G'] Right Face: ['B', 'B', 'R', 'W'] Back Face: ['R', 'Y', 'Y', 'B'] Top Face: ['B', 'O', 'O', 'O'] Down Face: ['G', 'R', 'R', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'Y', 'O', 'G'] ['W', 'W', 'W', 'G'] ['B', 'B', 'R', 'W'] ['R', 'Y', 'Y', 'B'] ['B', 'O', 'O', 'O'] ['G', 'R', 'R', 'Y']
+<__main__.RubiksState object at 0x75f151e890> ['B', 'U', 'R']
+Left Face: ['G', 'G', 'Y', 'O'] Front Face: ['R', 'G', 'O', 'O'] Right Face: ['B', 'W', 'B', 'R'] Back Face: ['O', 'R', 'B', 'Y'] Top Face: ['W', 'B', 'W', 'Y'] Down Face: ['R', 'G', 'Y', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'Y', 'O'] ['R', 'G', 'O', 'O'] ['B', 'W', 'B', 'R'] ['O', 'R', 'B', 'Y'] ['W', 'B', 'W', 'Y'] ['R', 'G', 'Y', 'W']
+<__main__.RubiksState object at 0x75f151ecd0> ['B', 'U', 'U']
+Left Face: ['W', 'R', 'Y', 'O'] Front Face: ['B', 'G', 'B', 'G'] Right Face: ['Y', 'O', 'R', 'W'] Back Face: ['G', 'G', 'B', 'B'] Top Face: ['W', 'W', 'O', 'O'] Down Face: ['R', 'R', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['W', 'R', 'Y', 'O'] ['B', 'G', 'B', 'G'] ['Y', 'O', 'R', 'W'] ['G', 'G', 'B', 'B'] ['W', 'W', 'O', 'O'] ['R', 'R', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f151f110> ['B', 'U', 'D']
+Left Face: ['G', 'G', 'G', 'G'] Front Face: ['R', 'R', 'W', 'W'] Right Face: ['B', 'B', 'B', 'B'] Back Face: ['O', 'Y', 'O', 'Y'] Top Face: ['W', 'O', 'W', 'O'] Down Face: ['Y', 'R', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'G'] ['R', 'R', 'W', 'W'] ['B', 'B', 'B', 'B'] ['O', 'Y', 'O', 'Y'] ['W', 'O', 'W', 'O'] ['Y', 'R', 'Y', 'R']
+<__main__.RubiksState object at 0x75f151f550> ['B', 'U', 'F']
+Left Face: ['Y', 'G', 'Y', 'Y'] Front Face: ['G', 'G', 'R', 'W'] Right Face: ['W', 'B', 'O', 'W'] Back Face: ['O', 'Y', 'B', 'B'] Top Face: ['W', 'O', 'O', 'G'] Down Face: ['R', 'R', 'R', 'B']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'Y', 'Y'] ['G', 'G', 'R', 'W'] ['W', 'B', 'O', 'W'] ['O', 'Y', 'B', 'B'] ['W', 'O', 'O', 'G'] ['R', 'R', 'R', 'B']
+<__main__.RubiksState object at 0x75f151f990> ['B', 'U', 'B']
+Left Face: ['G', 'R', 'R', 'O'] Front Face: ['R', 'G', 'W', 'G'] Right Face: ['B', 'W', 'R', 'O'] Back Face: ['B', 'O', 'B', 'Y'] Top Face: ['Y', 'G', 'W', 'O'] Down Face: ['W', 'B', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'R', 'R', 'O'] ['R', 'G', 'W', 'G'] ['B', 'W', 'R', 'O'] ['B', 'O', 'B', 'Y'] ['Y', 'G', 'W', 'O'] ['W', 'B', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17d2850> ['B', 'D', 'L']
+Left Face: ['Y', 'G', 'G', 'O'] Front Face: ['O', 'W', 'G', 'W'] Right Face: ['R', 'W', 'B', 'B'] Back Face: ['Y', 'B', 'Y', 'Y'] Top Face: ['O', 'O', 'B', 'W'] Down Face: ['R', 'R', 'G', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'G', 'G', 'O'] ['O', 'W', 'G', 'W'] ['R', 'W', 'B', 'B'] ['Y', 'B', 'Y', 'Y'] ['O', 'O', 'B', 'W'] ['R', 'R', 'G', 'R']
+<__main__.RubiksState object at 0x75f151fdd0> ['B', 'D', 'R']
+Left Face: ['O', 'Y', 'G', 'G'] Front Face: ['G', 'R', 'O', 'W'] Right Face: ['W', 'B', 'R', 'B'] Back Face: ['B', 'R', 'O', 'R'] Top Face: ['O', 'Y', 'W', 'B'] Down Face: ['Y', 'W', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'G', 'G'] ['G', 'R', 'O', 'W'] ['W', 'B', 'R', 'B'] ['B', 'R', 'O', 'R'] ['O', 'Y', 'W', 'B'] ['Y', 'W', 'Y', 'G']
+<__main__.RubiksState object at 0x75f1520250> ['B', 'D', 'U']
+Left Face: ['G', 'G', 'G', 'G'] Front Face: ['R', 'R', 'W', 'W'] Right Face: ['B', 'B', 'B', 'B'] Back Face: ['O', 'Y', 'O', 'Y'] Top Face: ['W', 'O', 'W', 'O'] Down Face: ['Y', 'R', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'G', 'G'] ['R', 'R', 'W', 'W'] ['B', 'B', 'B', 'B'] ['O', 'Y', 'O', 'Y'] ['W', 'O', 'W', 'O'] ['Y', 'R', 'Y', 'R']
+<__main__.RubiksState object at 0x75f1520690> ['B', 'D', 'D']
+Left Face: ['O', 'Y', 'R', 'W'] Front Face: ['G', 'B', 'G', 'B'] Right Face: ['R', 'W', 'Y', 'O'] Back Face: ['B', 'B', 'G', 'G'] Top Face: ['O', 'O', 'W', 'W'] Down Face: ['Y', 'Y', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'R', 'W'] ['G', 'B', 'G', 'B'] ['R', 'W', 'Y', 'O'] ['B', 'B', 'G', 'G'] ['O', 'O', 'W', 'W'] ['Y', 'Y', 'R', 'R']
+<__main__.RubiksState object at 0x75f1520ad0> ['B', 'D', 'F']
+Left Face: ['Y', 'Y', 'G', 'R'] Front Face: ['R', 'W', 'G', 'G'] Right Face: ['W', 'W', 'W', 'B'] Back Face: ['B', 'B', 'O', 'Y'] Top Face: ['O', 'O', 'G', 'O'] Down Face: ['Y', 'R', 'B', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'G', 'R'] ['R', 'W', 'G', 'G'] ['W', 'W', 'W', 'B'] ['B', 'B', 'O', 'Y'] ['O', 'O', 'G', 'O'] ['Y', 'R', 'B', 'R']
+<__main__.RubiksState object at 0x75f1520f10> ['B', 'D', 'B']
+Left Face: ['O', 'Y', 'R', 'G'] Front Face: ['G', 'R', 'G', 'W'] Right Face: ['R', 'O', 'B', 'O'] Back Face: ['O', 'B', 'Y', 'B'] Top Face: ['G', 'Y', 'W', 'W'] Down Face: ['B', 'W', 'Y', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'Y', 'R', 'G'] ['G', 'R', 'G', 'W'] ['R', 'O', 'B', 'O'] ['O', 'B', 'Y', 'B'] ['G', 'Y', 'W', 'W'] ['B', 'W', 'Y', 'R']
+<__main__.RubiksState object at 0x75f17d2c90> ['B', 'F', 'L']
+Left Face: ['Y', 'Y', 'Y', 'Y'] Front Face: ['O', 'O', 'G', 'G'] Right Face: ['W', 'W', 'W', 'W'] Back Face: ['R', 'B', 'R', 'B'] Top Face: ['B', 'O', 'B', 'O'] Down Face: ['G', 'R', 'G', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'Y'] ['O', 'O', 'G', 'G'] ['W', 'W', 'W', 'W'] ['R', 'B', 'R', 'B'] ['B', 'O', 'B', 'O'] ['G', 'R', 'G', 'R']
+<__main__.RubiksState object at 0x75f1521350> ['B', 'F', 'R']
+Left Face: ['Y', 'Y', 'Y', 'Y'] Front Face: ['G', 'G', 'O', 'O'] Right Face: ['W', 'W', 'W', 'W'] Back Face: ['B', 'R', 'B', 'R'] Top Face: ['O', 'B', 'O', 'B'] Down Face: ['R', 'G', 'R', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'Y', 'Y'] ['G', 'G', 'O', 'O'] ['W', 'W', 'W', 'W'] ['B', 'R', 'B', 'R'] ['O', 'B', 'O', 'B'] ['R', 'G', 'R', 'G']
+<__main__.RubiksState object at 0x75f1521790> ['B', 'F', 'U']
+Left Face: ['G', 'G', 'Y', 'Y'] Front Face: ['W', 'G', 'W', 'G'] Right Face: ['B', 'B', 'W', 'W'] Back Face: ['Y', 'Y', 'B', 'B'] Top Face: ['O', 'O', 'O', 'O'] Down Face: ['R', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'Y', 'Y'] ['W', 'G', 'W', 'G'] ['B', 'B', 'W', 'W'] ['Y', 'Y', 'B', 'B'] ['O', 'O', 'O', 'O'] ['R', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f1521bd0> ['B', 'F', 'D']
+Left Face: ['Y', 'Y', 'G', 'G'] Front Face: ['G', 'W', 'G', 'W'] Right Face: ['W', 'W', 'B', 'B'] Back Face: ['B', 'B', 'Y', 'Y'] Top Face: ['O', 'O', 'O', 'O'] Down Face: ['R', 'R', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'Y', 'G', 'G'] ['G', 'W', 'G', 'W'] ['W', 'W', 'B', 'B'] ['B', 'B', 'Y', 'Y'] ['O', 'O', 'O', 'O'] ['R', 'R', 'R', 'R']
+<__main__.RubiksState object at 0x75f1522010> ['B', 'F', 'F']
+Left Face: ['R', 'Y', 'Y', 'R'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['O', 'W', 'O', 'W'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['O', 'O', 'Y', 'Y'] Down Face: ['R', 'R', 'W', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'Y', 'Y', 'R'] ['G', 'G', 'G', 'G'] ['O', 'W', 'O', 'W'] ['B', 'B', 'B', 'B'] ['O', 'O', 'Y', 'Y'] ['R', 'R', 'W', 'W']
+<__main__.RubiksState object at 0x75f1522450> ['B', 'F', 'B']
+Left Face: ['Y', 'R', 'R', 'Y'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['W', 'O', 'W', 'O'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['Y', 'Y', 'O', 'O'] Down Face: ['W', 'W', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'R', 'R', 'Y'] ['G', 'G', 'G', 'G'] ['W', 'O', 'W', 'O'] ['B', 'B', 'B', 'B'] ['Y', 'Y', 'O', 'O'] ['W', 'W', 'R', 'R']
+<__main__.RubiksState object at 0x75f17d30d0> ['B', 'B', 'L']
+Left Face: ['R', 'R', 'O', 'O'] Front Face: ['Y', 'W', 'G', 'G'] Right Face: ['R', 'O', 'R', 'O'] Back Face: ['W', 'B', 'Y', 'B'] Top Face: ['B', 'Y', 'B', 'W'] Down Face: ['G', 'W', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['R', 'R', 'O', 'O'] ['Y', 'W', 'G', 'G'] ['R', 'O', 'R', 'O'] ['W', 'B', 'Y', 'B'] ['B', 'Y', 'B', 'W'] ['G', 'W', 'G', 'Y']
+<__main__.RubiksState object at 0x75f1522890> ['B', 'B', 'R']
+Left Face: ['O', 'R', 'R', 'O'] Front Face: ['G', 'G', 'Y', 'W'] Right Face: ['O', 'O', 'R', 'R'] Back Face: ['B', 'W', 'B', 'Y'] Top Face: ['Y', 'B', 'W', 'B'] Down Face: ['W', 'G', 'Y', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'R', 'R', 'O'] ['G', 'G', 'Y', 'W'] ['O', 'O', 'R', 'R'] ['B', 'W', 'B', 'Y'] ['Y', 'B', 'W', 'B'] ['W', 'G', 'Y', 'G']
+<__main__.RubiksState object at 0x75f1522cd0> ['B', 'B', 'U']
+Left Face: ['G', 'G', 'R', 'O'] Front Face: ['R', 'G', 'O', 'G'] Right Face: ['B', 'B', 'R', 'O'] Back Face: ['O', 'R', 'B', 'B'] Top Face: ['W', 'Y', 'W', 'Y'] Down Face: ['W', 'W', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'G', 'R', 'O'] ['R', 'G', 'O', 'G'] ['B', 'B', 'R', 'O'] ['O', 'R', 'B', 'B'] ['W', 'Y', 'W', 'Y'] ['W', 'W', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f1523110> ['B', 'B', 'D']
+Left Face: ['O', 'R', 'G', 'G'] Front Face: ['G', 'R', 'G', 'O'] Right Face: ['R', 'O', 'B', 'B'] Back Face: ['B', 'B', 'O', 'R'] Top Face: ['Y', 'Y', 'W', 'W'] Down Face: ['Y', 'W', 'Y', 'W']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'R', 'G', 'G'] ['G', 'R', 'G', 'O'] ['R', 'O', 'B', 'B'] ['B', 'B', 'O', 'R'] ['Y', 'Y', 'W', 'W'] ['Y', 'W', 'Y', 'W']
+<__main__.RubiksState object at 0x75f1523550> ['B', 'B', 'F']
+Left Face: ['Y', 'R', 'R', 'Y'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['W', 'O', 'W', 'O'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['Y', 'Y', 'O', 'O'] Down Face: ['W', 'W', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['Y', 'R', 'R', 'Y'] ['G', 'G', 'G', 'G'] ['W', 'O', 'W', 'O'] ['B', 'B', 'B', 'B'] ['Y', 'Y', 'O', 'O'] ['W', 'W', 'R', 'R']
+<__main__.RubiksState object at 0x75f1523990> ['B', 'B', 'B']
+Left Face: ['O', 'W', 'W', 'O'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['R', 'Y', 'R', 'Y'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['R', 'R', 'W', 'W'] Down Face: ['O', 'O', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'W', 'W', 'O'] ['G', 'G', 'G', 'G'] ['R', 'Y', 'R', 'Y'] ['B', 'B', 'B', 'B'] ['R', 'R', 'W', 'W'] ['O', 'O', 'Y', 'Y']
+<__main__.RubiksState object at 0x75f17d3510> ['L', 'L', 'L', 'L']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Solved
+
+[Program finished]
