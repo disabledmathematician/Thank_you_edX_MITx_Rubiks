@@ -194,10 +194,10 @@ Top Left Back to Top Left Front """
 		elcopy = self.moves.copy()
 		elcopy.append("B")
 		return RubiksState(ttlf.copy(), ttrf.copy(), tblf.copy(), tbrf.copy(), ntlb.copy(), nblb.copy(), ntrb.copy(), nbrb.copy(), elcopy)
-		def B2(self):
-			pass
-		def Binverse(self):
-			pass
+	def B2(self):
+		pass
+	def Binverse(self):
+		pass
 #		return RubiksState(elcopy)
 #	def B2(self):
 #		elcopy = self.moves.copy()
