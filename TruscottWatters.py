@@ -119,6 +119,7 @@ Top Left Back to Top Left Front """
 	def R2(self):
 		pass
 	def Rinverse(self):
+		""" Top Right Front set as Bottom Right Front. Bottom Right Front set as Bottom Right Back. Bottom Right Back set as Top Right Back. Top Right Back set as Top Right Front """
 		pass
 	def U(self):
 		# Indices 0, 1, 2 to 0, 2, 1 (mapping)
@@ -147,6 +148,7 @@ Top Left Back to Top Left Front """
 	def U2(self):
 		pass
 	def Uinverse(self):
+		""" Top Right Front set as Top Left Front. Top Left Front set as Top Left Back. Top Left Back set as Top Right Back. Top Right Back set as Top Right Front """
 		pass
 	def D(self):
 		# Indices 0, 1, 2 to 0, 2, 1 (mapping)
