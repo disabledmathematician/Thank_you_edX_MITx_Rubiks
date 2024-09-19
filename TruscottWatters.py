@@ -71,7 +71,29 @@ Top Left Back to Top Left Front """
 	def L2(self):
 		pass
 	def Linverse(self):
-		pass
+				""" Top Left Front takes on the value of Bottom Left Front. Top Left Back takes on Top Left Front. Bottom Left Back Takes on Top Left Back. Bottom Left Front takes on Bottom Left Back """
+		ttlf = self.tlf.copy()
+		tblf = self.blf.copy()
+		ttrf = self.trf.copy()
+		tbrf = self.brf.copy()
+		ttlb = self.tlb.copy()
+		tblb = self.blb.copy()
+		ttrb = self.trb.copy()
+		tbrb = self.brb.copy()
+		nblf = [0] * 3
+		nblb = [0] * 3
+		ntlb = [0] * 3
+		ntlf = [0] * 3
+		ntlf[2], ntlf[1], ntlf[0] = tblf[0], tblf[1], tblf[2]
+		# Top Left Front takes on Bottom Left Front
+		# Bottom Left Front takes on Bottom Left Back
+		# Bottom Left Back takes on Top Left Back
+		# Top Left Back takes on Top Left Front
+		# here
+		elcopy = self.moves.copy()
+		elcopy.append("L")
+		# tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
+		return RubiksState(ntlf.copy(), ttrf.copy(), nblf.copy(), tbrf.copy(), ntlb.copy(), nblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
 	def R(self):
 		# Indices 0, 1, 2 to 2, 1, 0 (mapping)
 		""" Top Right Front to Bottom Right Front.
@@ -235,7 +257,8 @@ Top Left Back to Top Left Front """
 def CharlesTruscottRubiks():
 #	item = RubiksState([])
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
-	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
+#	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
+	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
 #	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
