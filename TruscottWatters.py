@@ -175,6 +175,7 @@ Top Left Back to Top Left Front """
 	def D2(self):
 		pass
 	def Dinverse(self):
+		""" Bottom Right Front set as Bottom Left Front. Bottom Left Front set as Bottom Left Back. Bottom Left Back set as Bottom Right Back. Bottom Right Back set as Bottom Right Front """
 		pass
 	def F(self):
 		# Indices 0, 1, 2 to 1, 0, 2 (mapping)
@@ -198,6 +199,7 @@ Top Left Back to Top Left Front """
 	def F2(self):
 		pass
 	def Finverse(self):
+		""" Bottom Left Front set as Top Left Front. Top Left Front set as Top Right Front. Top Right Front set as Bottom Right Front. Bottom Right Front set as Bottom Left Front """
 		pass
 	def B(self):
 		# Indices 0, 1, 2 to 1, 0, 2 (mapping)
