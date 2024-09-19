@@ -91,7 +91,7 @@ Top Left Back to Top Left Front """
 		# Top Left Back takes on Top Left Front
 		# here
 		elcopy = self.moves.copy()
-		elcopy.append("L")
+		elcopy.append("L\'")
 		# tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
 		return RubiksState(ntlf.copy(), ttrf.copy(), nblf.copy(), tbrf.copy(), ntlb.copy(), nblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
 	def R(self):
