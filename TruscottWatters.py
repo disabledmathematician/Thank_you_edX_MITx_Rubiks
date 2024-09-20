@@ -104,10 +104,14 @@ Top Left Back to Top Left Front """
 		nblb = [0] * 3
 		ntlb = [0] * 3
 		ntlf = [0] * 3
-		ntlf[0], ntlf[1], ntlf[2] = tblf[0], tblf[1], tblf[2]
+		ntlf[0], ntlf[1], ntlf[2] = tblf[2], tblf[1], tblf[0]
+		# Top Left Front from Bottom Left Front
+		ntlb[0], ntlb[1], ntlb[2] = ttlf[2], ttlf[1], ttlf[0]
+		#Top Left Back takes on Top Left Front
+		nblb[2], nblb[1], nblb[0] = ttlb[0], ttlb[1], ttlb[2] # Bottom Left Back takes top Left back
 		nblf[0], nblf[1], nblf[2] = tblb[0], tblb[1], tblb[2]
-		nblb[0], nblb[1], nblb[2] = ttlb[0], ttlb[1], ttlb[2]
-		ntlb[0], ntlb[1], ntlb[2] = ttlf[0], ttlf[1], ttlf[2]
+		
+# Repaired hopefully?
 		elcopy = self.moves.copy()
 		elcopy.append("L inverse")
 		# tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
@@ -156,7 +160,22 @@ Top Left Back to Top Left Front """
 		pass
 	def Rinverse(self):
 		""" Top Right Front set as Bottom Right Front. Bottom Right Front set as Bottom Right Back. Bottom Right Back set as Top Right Back. Top Right Back set as Top Right Front """
-		pass
+		ttlf = self.tlf.copy()
+		tblf = self.blf.copy()
+		ttrf = self.trf.copy()
+		tbrf = self.brf.copy()
+		ttlb = self.tlb.copy()
+		tblb = self.blb.copy()
+		ttrb = self.trb.copy()
+		tbrb = self.brb.copy()
+		nbrf, nbrb, ntrb, ntrf = [0] * 3, [0] * 3, [0] * 3,[0] * 3
+		ntrf[0], ntrf[1], ntrf[2] = tbrf[0], tbrf[1], tbrf[2]
+		nbrf[0], nbrf[1], nbrf[2] = tbrb[0], tbrb[1], tbrb[2]
+		nbrb[0], nbrb[1], nbrb[2] = ttrb[0], ttrb[1], ttrb[2]
+		ntrb[0], ntrb[1], ntrb[2] = ttrf[0], ttrf[1], ttrf[2]
+		elcopy = self.moves.copy()
+		elcopy.append("R inverse")
+		return RubiksState(ttlf.copy(), ntrf.copy(), tblf.copy(), nbrf.copy(), ttlb.copy(), tblb.copy(), ntrb.copy(), nbrb.copy(), elcopy)
 	def U(self):
 		# Indices 0, 1, 2 to 0, 2, 1 (mapping)
 		""" Top Left Front to Top Left Back
@@ -349,13 +368,13 @@ Top Left Back to Top Left Front """
 def CharlesTruscottRubiks():
 #	item = RubiksState([])
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
-	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["G", "Y", "O"], ["G", "Y", "R"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
+#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["G", "Y", "O"], ["G", "Y", "R"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 #	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
 #	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
-#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
+	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
-	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linverse(),  lambda s: s.R(), lambda s: s.R2(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.F(),  lambda s: s.F2(), lambda s: s.B() ]
+	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linverse(),  lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinverse(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.F(),  lambda s: s.F2(), lambda s: s.B() ]
 #	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.F2(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.B2(), lambda s: s.Binv()]
 #	print(state[0].moves)
 	for move in moves:
