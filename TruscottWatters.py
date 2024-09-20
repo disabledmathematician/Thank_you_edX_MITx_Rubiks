@@ -257,10 +257,10 @@ Top Left Back to Top Left Front """
 def CharlesTruscottRubiks():
 #	item = RubiksState([])
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
-	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "B", "R"], ["W", "R", "B"], ["Y", "B", "O"], [])
+#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "B", "R"], ["W", "R", "B"], ["Y", "O", "B"], [])
 #	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
 #	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
-#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
+	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
 	moves = [lambda s: s.L(), lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
