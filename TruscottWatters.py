@@ -104,19 +104,7 @@ Top Left Back to Top Left Front """
 		nblb = [0] * 3
 		ntlb = [0] * 3
 		ntlf = [0] * 3
-		ntlf[2], ntlf[1], ntlf[0] = tblf[0], tblf[1], tblf[2]
-		# Top Left Front takes on Bottom Left Front
-		nblf[2], nblf[1], nblf[0] = tblb[0], tblb[1], tblb[2]
-		# Bottom Left Front takes on Bottom Left Back
-		nblb[2], nblb[1], nblb[0] = ttlb[0], ttlb[1], ttlb[2]
-		# Bottom Left Back takes on Top Left Back
-		ntlb[2], ntlb[1], ntlb[0] = ttlf[0], ttlf[1], ttlf[2]
-		# Top Left Back takes on Top Left Front
-		elcopy = self.moves.copy()
-		elcopy.append("L inverse")
-	# Hoping this is correct. Will need thorough code review and prototyping
-		# tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
-		return RubiksState(ntlf.copy(), ttrf.copy(), nblf.copy(), tbrf.copy(), ntlb.copy(), nblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
+		pass
 	def R(self):
 		# Indices 0, 1, 2 to 2, 1, 0 (mapping)
 		""" Top Right Front to Bottom Right Front.
@@ -289,8 +277,8 @@ def CharlesTruscottRubiks():
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
 #	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "B", "R"], ["W", "R", "B"], ["Y", "O", "B"], [])
 #	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
-#	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
-	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
+	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
+#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
 	moves = [lambda s: s.L(), lambda s: s.L2(),  lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
