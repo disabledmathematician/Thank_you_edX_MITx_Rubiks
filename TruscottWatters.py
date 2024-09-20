@@ -136,6 +136,23 @@ Top Left Back to Top Left Front """
 		return RubiksState(ttlf.copy(), ntrf.copy(), tblf.copy(), nbrf.copy(), ttlb.copy(), tblb.copy(), ntrb.copy(), nbrb.copy(), elcopy)
 	def R2(self):
 		""" Bottom Right Back to Top Right Front. Top Right Front to Bottom Right Back. Top Right Back to Bottom Right Front. Bottom Right Front to Top Right Back """
+		ttlf = self.tlf.copy()
+		tblf = self.blf.copy()
+		ttrf = self.trf.copy()
+		tbrf = self.brf.copy()
+		ttlb = self.tlb.copy()
+		tblb = self.blb.copy()
+		ttrb = self.trb.copy()
+		tbrb = self.brb.copy()
+		nbrf, nbrb, ntrb, ntrf = [0] * 3, [0] * 3, [0] * 3,[0] * 3
+		ntrf[0], ntrf[1], ntrf[2] = tbrb[0], tbrb[1], tbrb[2]
+		nbrb[0], nbrb[1], nbrb[2] = ttrf[0], ttrf[1], ttrf[2]
+		nbrf[0], nbrf[1], nbrf[2] = ttrb[0], ttrb[1], ttrb[2]
+		ntrb[0], ntrb[1], ntrb[2] = tbrf[0], tbrf[1], tbrf[2]
+		# Need code review and auditing for the coordinate reference. May not be the righr indices 0 as top 1 as side and 2 as side
+		elcopy = self.moves.copy()
+		elcopy.append("R2")
+		return RubiksState(ttlf.copy(), ntrf.copy(), tblf.copy(), nbrf.copy(), ttlb.copy(), tblb.copy(), ntrb.copy(), nbrb.copy(), elcopy)
 		pass
 	def Rinverse(self):
 		""" Top Right Front set as Bottom Right Front. Bottom Right Front set as Bottom Right Back. Bottom Right Back set as Top Right Back. Top Right Back set as Top Right Front """
@@ -288,7 +305,7 @@ def CharlesTruscottRubiks():
 	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
-	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linverse(),  lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
+	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linverse(),  lambda s: s.R(), lambda s: s.R2(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
 #	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.F2(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.B2(), lambda s: s.Binv()]
 #	print(state[0].moves)
 	for move in moves:
