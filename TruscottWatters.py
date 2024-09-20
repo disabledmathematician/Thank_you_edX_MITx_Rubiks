@@ -258,28 +258,32 @@ Top Left Back to Top Left Front """
 		if self.left_face == ["O", "O", "O", "O"] and self.front_face == ["G", "G", "G", "G"] and self.right_face == ["R", "R", "R", "R"] and self.back_face == ["B", "B", "B", "B"] and self.top_face == ["W", "W", "W", "W"] and self.down_face == ["Y", "Y" , "Y" , "Y"]:
 			print("Solved")
 			print(self.moves)
+			print("Solved: {} {} {} {} {} {}".format(self.left_face, self.front_face, self.right_face, self.back_face, self.top_face, self.down_face))
 			return True
 			exit(1)
 		elif self.right_face == ["O", "O", "O", "O"] and self.front_face == ["G", "G", "G", "G"] and self.left_face == ["R", "R", "R", "R"] and self.back_face == ["B", "B", "B", "B"] and self.top_face == ["W", "W", "W", "W"] and self.down_face == ["Y", "Y" , "Y" , "Y"]:
 			print("Solved")
 			print(self.moves)
+			print("Solved: {} {} {} {} {} {}".format(self.left_face, self.front_face, self.right_face, self.back_face, self.top_face, self.down_face))
 			return True
 			exit(1)
 		elif self.left_face == ["O", "O", "O", "O"] and self.back_face == ["G", "G", "G", "G"] and self.right_face == ["R", "R", "R", "R"] and self.front_face == ["B", "B", "B", "B"] and self.top_face == ["W", "W", "W", "W"] and self.down_face == ["Y", "Y" , "Y" , "Y"]:
 			print("Solved")
 			print(self.moves)
+			print("Solved: {} {} {} {} {} {}".format(self.left_face, self.front_face, self.right_face, self.back_face, self.top_face, self.down_face))
 			return True
 			exit(1)
 		elif self.left_face == ["O", "O", "O", "O"] and self.front_face == ["G", "G", "G", "G"] and self.right_face == ["R", "R", "R", "R"] and self.back_face == ["B", "B", "B", "B"] and self.down_face == ["W", "W", "W", "W"] and self.top_face == ["Y", "Y" , "Y" , "Y"]:
 			print("Solved")
 			print(self.moves)
+			print("Solved: {} {} {} {} {} {}".format(self.left_face, self.front_face, self.right_face, self.back_face, self.top_face, self.down_face))
 			return True
 			exit(1)
 		else:
 			print("Not solved: {} {} {} {} {} {}".format(self.left_face, self.front_face, self.right_face, self.back_face, self.top_face, self.down_face))
 		return False
 
-
+""" Need thorough code review after prototyping finished. Cubit arrays must revolve around face rotation """ 
 def CharlesTruscottRubiks():
 #	item = RubiksState([])
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
@@ -289,7 +293,7 @@ def CharlesTruscottRubiks():
 	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
-	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linverse(), lambda s: s.Linverse(), lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
+	moves = [lambda s: s.L(), lambda s: s.L2(),  lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
 #	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.F2(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.B2(), lambda s: s.Binv()]
 #	print(state[0].moves)
 	for move in moves:
@@ -300,7 +304,7 @@ def CharlesTruscottRubiks():
 #	print(state)
 	print("Charles Truscott Watters. My Rubik's cube solution Python algorithm.")
 	from time import sleep
-	while c < 6 ** 32:
+	while c < 18 ** 3:
 		elem = state.popleft()
 		for move in moves:
 			t = move(elem)
@@ -309,12 +313,55 @@ def CharlesTruscottRubiks():
 			print("Left Face: {} Front Face: {} Right Face: {} Back Face: {} Top Face: {} Down Face: {}".format(t.left_face, t.front_face, t.right_face, t.back_face, t.top_face, t.down_face))
 			print("Authored by Charles Truscott Watters. Rubik's algorithm")
 #			sleep(0.2)
-		if elem.is_solved() == True:
-			print("Answer: ")
-			print(elem.moves)
-			exit(1)
+			if t.is_solved() == True:
+				print("Answer: ")
+				print(t.moves)
+				exit(1)
 		c += 1
 
+""" Charles Truscott Watters. My Rubik's cube solution Python algorithm.
+<__main__.RubiksState object at 0x7121978310> ['L', 'L']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['B', 'B', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['G', 'B', 'G', 'B'] Top Face: ['Y', 'W', 'Y', 'W'] Down Face: ['W', 'Y', 'W', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['B', 'B', 'G', 'G'] ['R', 'R', 'R', 'R'] ['G', 'B', 'G', 'B'] ['Y', 'W', 'Y', 'W'] ['W', 'Y', 'W', 'Y']
+<__main__.RubiksState object at 0x7121978750> ['L', 'L2']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['Y', 'Y', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['W', 'B', 'W', 'B'] Top Face: ['G', 'W', 'G', 'W'] Down Face: ['B', 'Y', 'B', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['Y', 'Y', 'G', 'G'] ['R', 'R', 'R', 'R'] ['W', 'B', 'W', 'B'] ['G', 'W', 'G', 'W'] ['B', 'Y', 'B', 'Y']
+<__main__.RubiksState object at 0x7121978b90> ['L', 'R']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['W', 'W', 'W', 'W'] ['R', 'R', 'R', 'R'] ['Y', 'Y', 'Y', 'Y'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
+<__main__.RubiksState object at 0x7121978fd0> ['L', 'U']
+Left Face: ['G', 'W', 'O', 'O'] Front Face: ['R', 'W', 'R', 'G'] Right Face: ['B', 'Y', 'R', 'R'] Back Face: ['O', 'O', 'Y', 'B'] Top Face: ['B', 'B', 'W', 'W'] Down Face: ['G', 'Y', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'W', 'O', 'O'] ['R', 'W', 'R', 'G'] ['B', 'Y', 'R', 'R'] ['O', 'O', 'Y', 'B'] ['B', 'B', 'W', 'W'] ['G', 'Y', 'G', 'Y']
+<__main__.RubiksState object at 0x7121979410> ['L', 'D']
+Left Face: ['O', 'O', 'W', 'G'] Front Face: ['W', 'R', 'G', 'R'] Right Face: ['R', 'R', 'B', 'Y'] Back Face: ['Y', 'B', 'O', 'O'] Top Face: ['B', 'W', 'B', 'W'] Down Face: ['G', 'G', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'W', 'G'] ['W', 'R', 'G', 'R'] ['R', 'R', 'B', 'Y'] ['Y', 'B', 'O', 'O'] ['B', 'W', 'B', 'W'] ['G', 'G', 'Y', 'Y']
+<__main__.RubiksState object at 0x7121979850> ['L', 'F']
+Left Face: ['G', 'O', 'O', 'Y'] Front Face: ['W', 'G', 'W', 'G'] Right Face: ['B', 'R', 'W', 'R'] Back Face: ['Y', 'B', 'Y', 'B'] Top Face: ['B', 'W', 'O', 'O'] Down Face: ['G', 'Y', 'R', 'R']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['G', 'O', 'O', 'Y'] ['W', 'G', 'W', 'G'] ['B', 'R', 'W', 'R'] ['Y', 'B', 'Y', 'B'] ['B', 'W', 'O', 'O'] ['G', 'Y', 'R', 'R']
+<__main__.RubiksState object at 0x7121979c90> ['L', 'B']
+Left Face: ['O', 'G', 'Y', 'O'] Front Face: ['W', 'W', 'G', 'G'] Right Face: ['R', 'B', 'R', 'W'] Back Face: ['Y', 'Y', 'B', 'B'] Top Face: ['O', 'O', 'B', 'W'] Down Face: ['R', 'R', 'G', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'G', 'Y', 'O'] ['W', 'W', 'G', 'G'] ['R', 'B', 'R', 'W'] ['Y', 'Y', 'B', 'B'] ['O', 'O', 'B', 'W'] ['R', 'R', 'G', 'Y']
+<__main__.RubiksState object at 0x7121979e90> ['L2', 'L']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['Y', 'Y', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['W', 'B', 'W', 'B'] Top Face: ['G', 'W', 'G', 'W'] Down Face: ['B', 'Y', 'B', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Not solved: ['O', 'O', 'O', 'O'] ['Y', 'Y', 'G', 'G'] ['R', 'R', 'R', 'R'] ['W', 'B', 'W', 'B'] ['G', 'W', 'G', 'W'] ['B', 'Y', 'B', 'Y']
+<__main__.RubiksState object at 0x712197a110> ['L2', 'L2']
+Left Face: ['O', 'O', 'O', 'O'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
+Authored by Charles Truscott Watters. Rubik's algorithm
+Solved
+['L2', 'L2']
+Solved: ['O', 'O', 'O', 'O'] ['G', 'G', 'G', 'G'] ['R', 'R', 'R', 'R'] ['B', 'B', 'B', 'B'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
+Answer:
+['L2', 'L2']
 
+[Program finished]
+"""
 
 CharlesTruscottRubiks()
