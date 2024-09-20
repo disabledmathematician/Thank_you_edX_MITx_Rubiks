@@ -266,7 +266,7 @@ def CharlesTruscottRubiks():
 #	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
-	moves = [lambda s: s.L(), lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
+	moves = [lambda s: s.L(), lambda s: s.Linverse(), lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
 #	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.F2(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.B2(), lambda s: s.Binv()]
 #	print(state[0].moves)
 	for move in moves:
