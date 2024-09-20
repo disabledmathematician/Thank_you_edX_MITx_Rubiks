@@ -349,7 +349,7 @@ Top Left Back to Top Left Front """
 def CharlesTruscottRubiks():
 #	item = RubiksState([])
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
-	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "B", "R"], ["W", "R", "B"], ["Y", "O", "B"], [])
+	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["G", "Y", "O"], ["G", "Y", "R"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 #	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
 #	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
 #	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
@@ -366,7 +366,7 @@ def CharlesTruscottRubiks():
 #	print(state)
 	print("Charles Truscott Watters. My Rubik's cube solution Python algorithm.")
 	from time import sleep
-	while c < 18 ** 3:
+	while c < 18 ** 6:
 		elem = state.popleft()
 		for move in moves:
 			t = move(elem)
