@@ -104,7 +104,14 @@ Top Left Back to Top Left Front """
 		nblb = [0] * 3
 		ntlb = [0] * 3
 		ntlf = [0] * 3
-		pass
+		ntlf[0], ntlf[1], ntlf[2] = tblf[0], tblf[1], tblf[2]
+		nblf[0], nblf[1], nblf[2] = tblb[0], tblb[1], tblb[2]
+		nblb[0], nblb[1], nblb[2] = ttlb[0], ttlb[1], ttlb[2]
+		ntlb[0], ntlb[1], ntlb[2] = ttlf[0], ttlf[1], ttlf[2]
+		elcopy = self.moves.copy()
+		elcopy.append("L inverse")
+		# tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
+		return RubiksState(ntlf.copy(), ttrf.copy(), nblf.copy(), tbrf.copy(), ntlb.copy(), nblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
 	def R(self):
 		# Indices 0, 1, 2 to 2, 1, 0 (mapping)
 		""" Top Right Front to Bottom Right Front.
@@ -277,11 +284,11 @@ def CharlesTruscottRubiks():
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
 #	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "B", "R"], ["W", "R", "B"], ["Y", "O", "B"], [])
 #	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
-	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
-#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
+#	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
+	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
-	moves = [lambda s: s.L(), lambda s: s.L2(),  lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
+	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linverse(),  lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
 #	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.F2(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.B2(), lambda s: s.Binv()]
 #	print(state[0].moves)
 	for move in moves:
