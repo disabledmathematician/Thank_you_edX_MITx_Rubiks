@@ -72,7 +72,7 @@ Top Left Back to Top Left Front """
 		""" Bottom Left Back to Top Left Front. Top Left Front to Bottom Left Back. Bottom Left Front to Top Left Back. Top Left Back to Bottom Left Front """
 		pass
 	def Linverse(self):
-				""" Top Left Front takes on the value of Bottom Left Front. Top Left Back takes on Top Left Front. Bottom Left Back Takes on Top Left Back. Bottom Left Front takes on Bottom Left Back """
+		""" Top Left Front takes on the value of Bottom Left Front. Top Left Back takes on Top Left Front. Bottom Left Back Takes on Top Left Back. Bottom Left Front takes on Bottom Left Back """
 		ttlf = self.tlf.copy()
 		tblf = self.blf.copy()
 		ttrf = self.trf.copy()
@@ -176,6 +176,7 @@ Top Left Back to Top Left Front """
 		return RubiksState(ttlf.copy(), ttrf.copy(), nblf.copy(), nbrf.copy(), ttlb.copy(), nblb.copy(), ttrb.copy(), nbrb.copy(), elcopy)
 		pass
 	def D2(self):
+		""" Bottom Left Front set as Bottom Right Back. Bottom Right Back set as Bottom Left Front. Bottom Left Back set as Bottom Right Front. Bottom Right Front set as Bottom Left Back """
 		pass
 	def Dinverse(self):
 		""" Bottom Right Front set as Bottom Left Front. Bottom Left Front set as Bottom Left Back. Bottom Left Back set as Bottom Right Back. Bottom Right Back set as Bottom Right Front """
@@ -200,6 +201,7 @@ Top Left Back to Top Left Front """
 		elcopy.append("F")
 		return RubiksState(ntlf.copy(), ntrf.copy(), nblf.copy(), nbrf.copy(), ttlb.copy(), tblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
 	def F2(self):
+		""" Top Left Front set as Bottom Right Front. Bottom Right Front set as Top Left Front. Top Right Front set as Bottom Left Front. Bottom Left Front set as Top Right Front """
 		pass
 	def Finverse(self):
 		""" Bottom Left Front set as Top Left Front. Top Left Front set as Top Right Front. Top Right Front set as Bottom Right Front. Bottom Right Front set as Bottom Left Front """
@@ -224,6 +226,7 @@ Top Left Back to Top Left Front """
 		elcopy.append("B")
 		return RubiksState(ttlf.copy(), ttrf.copy(), tblf.copy(), tbrf.copy(), ntlb.copy(), nblb.copy(), ntrb.copy(), nbrb.copy(), elcopy)
 	def B2(self):
+		""" Bottom Right Back set as Top Left Back. Top Left Back set as Bottom Right Back. Bottom Left Back set as Top Right Back. Top Right Back set as Bottom Left Back """
 		pass
 	def Binverse(self):
 		""" Bottom Left Back set as Top Left Back. Top Left Back set as Top Right Back. Top Right Back set as Bottom Right Back. Bottom Right Back set as Bottom Left Back """
@@ -254,8 +257,9 @@ Top Left Back to Top Left Front """
 def CharlesTruscottRubiks():
 #	item = RubiksState([])
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
+	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "B", "R"], ["W", "R", "B"], ["Y", "B", "O"], [])
 #	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
-	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
+#	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
 #	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
