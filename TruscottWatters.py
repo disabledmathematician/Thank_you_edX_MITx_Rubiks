@@ -183,6 +183,26 @@ Top Left Back to Top Left Front """
 		return RubiksState(ntlf.copy(), ntrf.copy(), tblf.copy(), tbrf.copy(), ntlb.copy(), tblb.copy(), ntrb.copy(), tbrb.copy(), elcopy)
 	def U2(self):
 		""" Top Right Back set as Top Left Front. Top Left Front set as Top Right Back. Top Right Front set as Top Left Back. Top Left Back set as Top Right Front """
+		ttlf = self.tlf.copy()
+		tblf = self.blf.copy()
+		ttrf = self.trf.copy()
+		tbrf = self.brf.copy()
+		ttlb = self.tlb.copy()
+		tblb = self.blb.copy()
+		ttrb = self.trb.copy()
+		tbrb = self.brb.copy()
+		ntlb = [0] * 3
+		ntrb = [0] * 3
+		ntrf = [0] * 3
+		ntlf = [0] * 3
+		ntrb[0], ntrb[1], ntrb[2] = ttlf[0], ttlf[1], ttlf[1]
+		ntlf[0], ntlf[1], ntlf[2] = ttrb[0], ttrb[1], ttrb[2]
+		ntrf[0], ntrf[1], ntrf[2] = ttlb[0], ttlb[1], ttlb[2]
+		ntlb[0], ntlb[1], ntlb[2] = ttrf[0], ttrf[1], ttrf[2]
+		
+		elcopy = self.moves.copy()
+		elcopy.append("U2")
+		return RubiksState(ntlf.copy(), ntrf.copy(), tblf.copy(), tbrf.copy(), ntlb.copy(), tblb.copy(), ntrb.copy(), tbrb.copy(), elcopy)
 		pass
 	def Uinverse(self):
 		""" Top Right Front set as Top Left Front. Top Left Front set as Top Left Back. Top Left Back set as Top Right Back. Top Right Back set as Top Right Front """
@@ -211,7 +231,22 @@ Top Left Back to Top Left Front """
 		pass
 	def D2(self):
 		""" Bottom Left Front set as Bottom Right Back. Bottom Right Back set as Bottom Left Front. Bottom Left Back set as Bottom Right Front. Bottom Right Front set as Bottom Left Back """
-		pass
+		ttlf = self.tlf.copy()
+		tblf = self.blf.copy()
+		ttrf = self.trf.copy()
+		tbrf = self.brf.copy()
+		ttlb = self.tlb.copy()
+		tblb = self.blb.copy()
+		ttrb = self.trb.copy()
+		tbrb = self.brb.copy()
+		nblb, nbrb, nbrf, nblf= [0] * 3, [0] * 3, [0] * 3, [0] * 3
+		nblf[0], nblf[1], nblf[2] = tbrb[0], tbrb[1], tbrb[2]
+		nbrb[0], nbrb[1], nbrb[2] = tblf[0], tblf[1], tblf[2]
+		nblb[0], nblb[1], nblb[2] = tbrf[0], tbrf[1], tbrf[2]
+		nbrf[0], nbrf[1], nbrf[2] = tblb[0], tblb[1], tblb[2]
+		elcopy = self.moves.copy()
+		elcopy.append("D2")
+		return RubiksState(ttlf.copy(), ttrf.copy(), nblf.copy(), nbrf.copy(), ttlb.copy(), nblb.copy(), ttrb.copy(), nbrb.copy(), elcopy)
 	def Dinverse(self):
 		""" Bottom Right Front set as Bottom Left Front. Bottom Left Front set as Bottom Left Back. Bottom Left Back set as Bottom Right Back. Bottom Right Back set as Bottom Right Front """
 		pass
@@ -236,7 +271,23 @@ Top Left Back to Top Left Front """
 		return RubiksState(ntlf.copy(), ntrf.copy(), nblf.copy(), nbrf.copy(), ttlb.copy(), tblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
 	def F2(self):
 		""" Top Left Front set as Bottom Right Front. Bottom Right Front set as Top Left Front. Top Right Front set as Bottom Left Front. Bottom Left Front set as Top Right Front """
-		pass
+		ttlf = self.tlf.copy()
+		tblf = self.blf.copy()
+		ttrf = self.trf.copy()
+		tbrf = self.brf.copy()
+		ttlb = self.tlb.copy()
+		tblb = self.blb.copy()
+		ttrb = self.trb.copy()
+		tbrb = self.brb.copy()
+		ntlf, ntrf, nbrf, nblf = [0] * 3, [0] * 3, [0] * 3, [0] * 3
+		ntlf[0], ntlf[1], ntlf[2] = tbrf[0], tbrf[1], tbrf[2]
+		nbrf[0], nbrf[1], nbrf[2] = ttlf[0], ttlf[1], ttlf[2]
+		ntrf[0], ntrf[1], ntrf[2] = tblf[0], tblf[1], tblf[2]
+		nblf[0], nblf[1], nblf[2] = ttrf[0], ttrf[1], ttrf[2]
+		
+		elcopy = self.moves.copy()
+		elcopy.append("F2")
+		return RubiksState(ntlf.copy(), ntrf.copy(), nblf.copy(), nbrf.copy(), ttlb.copy(), tblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
 	def Finverse(self):
 		""" Bottom Left Front set as Top Left Front. Top Left Front set as Top Right Front. Top Right Front set as Bottom Right Front. Bottom Right Front set as Bottom Left Front """
 		pass
@@ -295,17 +346,16 @@ Top Left Back to Top Left Front """
 			print("Not solved: {} {} {} {} {} {}".format(self.left_face, self.front_face, self.right_face, self.back_face, self.top_face, self.down_face))
 		return False
 
-""" Need thorough code review after prototyping finished. Cubit arrays must revolve around face rotation """ 
 def CharlesTruscottRubiks():
 #	item = RubiksState([])
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
-#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "B", "R"], ["W", "R", "B"], ["Y", "O", "B"], [])
+	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "B", "R"], ["W", "R", "B"], ["Y", "O", "B"], [])
 #	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
 #	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
-	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
+#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
-	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linverse(),  lambda s: s.R(), lambda s: s.R2(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
+	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linverse(),  lambda s: s.R(), lambda s: s.R2(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.F(),  lambda s: s.F2(), lambda s: s.B() ]
 #	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.F2(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.B2(), lambda s: s.Binv()]
 #	print(state[0].moves)
 	for move in moves:
@@ -331,49 +381,6 @@ def CharlesTruscottRubiks():
 				exit(1)
 		c += 1
 
-""" Charles Truscott Watters. My Rubik's cube solution Python algorithm.
-<__main__.RubiksState object at 0x7121978310> ['L', 'L']
-Left Face: ['O', 'O', 'O', 'O'] Front Face: ['B', 'B', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['G', 'B', 'G', 'B'] Top Face: ['Y', 'W', 'Y', 'W'] Down Face: ['W', 'Y', 'W', 'Y']
-Authored by Charles Truscott Watters. Rubik's algorithm
-Not solved: ['O', 'O', 'O', 'O'] ['B', 'B', 'G', 'G'] ['R', 'R', 'R', 'R'] ['G', 'B', 'G', 'B'] ['Y', 'W', 'Y', 'W'] ['W', 'Y', 'W', 'Y']
-<__main__.RubiksState object at 0x7121978750> ['L', 'L2']
-Left Face: ['O', 'O', 'O', 'O'] Front Face: ['Y', 'Y', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['W', 'B', 'W', 'B'] Top Face: ['G', 'W', 'G', 'W'] Down Face: ['B', 'Y', 'B', 'Y']
-Authored by Charles Truscott Watters. Rubik's algorithm
-Not solved: ['O', 'O', 'O', 'O'] ['Y', 'Y', 'G', 'G'] ['R', 'R', 'R', 'R'] ['W', 'B', 'W', 'B'] ['G', 'W', 'G', 'W'] ['B', 'Y', 'B', 'Y']
-<__main__.RubiksState object at 0x7121978b90> ['L', 'R']
-Left Face: ['O', 'O', 'O', 'O'] Front Face: ['W', 'W', 'W', 'W'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['Y', 'Y', 'Y', 'Y'] Top Face: ['B', 'B', 'B', 'B'] Down Face: ['G', 'G', 'G', 'G']
-Authored by Charles Truscott Watters. Rubik's algorithm
-Not solved: ['O', 'O', 'O', 'O'] ['W', 'W', 'W', 'W'] ['R', 'R', 'R', 'R'] ['Y', 'Y', 'Y', 'Y'] ['B', 'B', 'B', 'B'] ['G', 'G', 'G', 'G']
-<__main__.RubiksState object at 0x7121978fd0> ['L', 'U']
-Left Face: ['G', 'W', 'O', 'O'] Front Face: ['R', 'W', 'R', 'G'] Right Face: ['B', 'Y', 'R', 'R'] Back Face: ['O', 'O', 'Y', 'B'] Top Face: ['B', 'B', 'W', 'W'] Down Face: ['G', 'Y', 'G', 'Y']
-Authored by Charles Truscott Watters. Rubik's algorithm
-Not solved: ['G', 'W', 'O', 'O'] ['R', 'W', 'R', 'G'] ['B', 'Y', 'R', 'R'] ['O', 'O', 'Y', 'B'] ['B', 'B', 'W', 'W'] ['G', 'Y', 'G', 'Y']
-<__main__.RubiksState object at 0x7121979410> ['L', 'D']
-Left Face: ['O', 'O', 'W', 'G'] Front Face: ['W', 'R', 'G', 'R'] Right Face: ['R', 'R', 'B', 'Y'] Back Face: ['Y', 'B', 'O', 'O'] Top Face: ['B', 'W', 'B', 'W'] Down Face: ['G', 'G', 'Y', 'Y']
-Authored by Charles Truscott Watters. Rubik's algorithm
-Not solved: ['O', 'O', 'W', 'G'] ['W', 'R', 'G', 'R'] ['R', 'R', 'B', 'Y'] ['Y', 'B', 'O', 'O'] ['B', 'W', 'B', 'W'] ['G', 'G', 'Y', 'Y']
-<__main__.RubiksState object at 0x7121979850> ['L', 'F']
-Left Face: ['G', 'O', 'O', 'Y'] Front Face: ['W', 'G', 'W', 'G'] Right Face: ['B', 'R', 'W', 'R'] Back Face: ['Y', 'B', 'Y', 'B'] Top Face: ['B', 'W', 'O', 'O'] Down Face: ['G', 'Y', 'R', 'R']
-Authored by Charles Truscott Watters. Rubik's algorithm
-Not solved: ['G', 'O', 'O', 'Y'] ['W', 'G', 'W', 'G'] ['B', 'R', 'W', 'R'] ['Y', 'B', 'Y', 'B'] ['B', 'W', 'O', 'O'] ['G', 'Y', 'R', 'R']
-<__main__.RubiksState object at 0x7121979c90> ['L', 'B']
-Left Face: ['O', 'G', 'Y', 'O'] Front Face: ['W', 'W', 'G', 'G'] Right Face: ['R', 'B', 'R', 'W'] Back Face: ['Y', 'Y', 'B', 'B'] Top Face: ['O', 'O', 'B', 'W'] Down Face: ['R', 'R', 'G', 'Y']
-Authored by Charles Truscott Watters. Rubik's algorithm
-Not solved: ['O', 'G', 'Y', 'O'] ['W', 'W', 'G', 'G'] ['R', 'B', 'R', 'W'] ['Y', 'Y', 'B', 'B'] ['O', 'O', 'B', 'W'] ['R', 'R', 'G', 'Y']
-<__main__.RubiksState object at 0x7121979e90> ['L2', 'L']
-Left Face: ['O', 'O', 'O', 'O'] Front Face: ['Y', 'Y', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['W', 'B', 'W', 'B'] Top Face: ['G', 'W', 'G', 'W'] Down Face: ['B', 'Y', 'B', 'Y']
-Authored by Charles Truscott Watters. Rubik's algorithm
-Not solved: ['O', 'O', 'O', 'O'] ['Y', 'Y', 'G', 'G'] ['R', 'R', 'R', 'R'] ['W', 'B', 'W', 'B'] ['G', 'W', 'G', 'W'] ['B', 'Y', 'B', 'Y']
-<__main__.RubiksState object at 0x712197a110> ['L2', 'L2']
-Left Face: ['O', 'O', 'O', 'O'] Front Face: ['G', 'G', 'G', 'G'] Right Face: ['R', 'R', 'R', 'R'] Back Face: ['B', 'B', 'B', 'B'] Top Face: ['W', 'W', 'W', 'W'] Down Face: ['Y', 'Y', 'Y', 'Y']
-Authored by Charles Truscott Watters. Rubik's algorithm
-Solved
-['L2', 'L2']
-Solved: ['O', 'O', 'O', 'O'] ['G', 'G', 'G', 'G'] ['R', 'R', 'R', 'R'] ['B', 'B', 'B', 'B'] ['W', 'W', 'W', 'W'] ['Y', 'Y', 'Y', 'Y']
-Answer:
-['L2', 'L2']
-
-[Program finished]
-"""
+# Quite a while to go yet. Need to check all those matrix transformations. Can refactor over the coming few months, now September 2024 - where I have spent the majority of the last year scheduled in mental hospitals under the Mental Health Act NSW 2007
 
 CharlesTruscottRubiks()
