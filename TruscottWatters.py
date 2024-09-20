@@ -70,7 +70,26 @@ Top Left Back to Top Left Front """
 		return RubiksState(ntlf.copy(), ttrf.copy(), nblf.copy(), tbrf.copy(), ntlb.copy(), nblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
 	def L2(self):
 		""" Bottom Left Back to Top Left Front. Top Left Front to Bottom Left Back. Bottom Left Front to Top Left Back. Top Left Back to Bottom Left Front """
-		pass
+		ttlf = self.tlf.copy()
+		tblf = self.blf.copy()
+		ttrf = self.trf.copy()
+		tbrf = self.brf.copy()
+		ttlb = self.tlb.copy()
+		tblb = self.blb.copy()
+		ttrb = self.trb.copy()
+		tbrb = self.brb.copy()
+		nblf = [0] * 3
+		nblb = [0] * 3
+		ntlb = [0] * 3
+		ntlf = [0] * 3
+		nblb[0], nblb[1], nblb[2] = ttlf[0], ttlf[1], ttlf[2]
+		ntlf[0], ntlf[1], ntlf[2] = tblb[0], tblb[1], tblb[2]
+		nblf[0], nblf[1], nblf[2] = ttlb[0], ttlb[1], ttlb[2]
+		ntlb[0], ntlb[1], ntlb[2] = tblf[0], tblf[1], tblf[2]
+		elcopy = self.moves.copy()
+		elcopy.append("L2")
+		# tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
+		return RubiksState(ntlf.copy(), ttrf.copy(), nblf.copy(), tbrf.copy(), ntlb.copy(), nblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
 	def Linverse(self):
 		""" Top Left Front takes on the value of Bottom Left Front. Top Left Back takes on Top Left Front. Bottom Left Back Takes on Top Left Back. Bottom Left Front takes on Bottom Left Back """
 		ttlf = self.tlf.copy()
@@ -94,7 +113,7 @@ Top Left Back to Top Left Front """
 		ntlb[2], ntlb[1], ntlb[0] = ttlf[0], ttlf[1], ttlf[2]
 		# Top Left Back takes on Top Left Front
 		elcopy = self.moves.copy()
-		elcopy.append("L\'")
+		elcopy.append("L inverse")
 	# Hoping this is correct. Will need thorough code review and prototyping
 		# tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
 		return RubiksState(ntlf.copy(), ttrf.copy(), nblf.copy(), tbrf.copy(), ntlb.copy(), nblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
@@ -238,18 +257,22 @@ Top Left Back to Top Left Front """
 	def is_solved(self):
 		if self.left_face == ["O", "O", "O", "O"] and self.front_face == ["G", "G", "G", "G"] and self.right_face == ["R", "R", "R", "R"] and self.back_face == ["B", "B", "B", "B"] and self.top_face == ["W", "W", "W", "W"] and self.down_face == ["Y", "Y" , "Y" , "Y"]:
 			print("Solved")
+			print(self.moves)
 			return True
 			exit(1)
 		elif self.right_face == ["O", "O", "O", "O"] and self.front_face == ["G", "G", "G", "G"] and self.left_face == ["R", "R", "R", "R"] and self.back_face == ["B", "B", "B", "B"] and self.top_face == ["W", "W", "W", "W"] and self.down_face == ["Y", "Y" , "Y" , "Y"]:
 			print("Solved")
+			print(self.moves)
 			return True
 			exit(1)
 		elif self.left_face == ["O", "O", "O", "O"] and self.back_face == ["G", "G", "G", "G"] and self.right_face == ["R", "R", "R", "R"] and self.front_face == ["B", "B", "B", "B"] and self.top_face == ["W", "W", "W", "W"] and self.down_face == ["Y", "Y" , "Y" , "Y"]:
 			print("Solved")
+			print(self.moves)
 			return True
 			exit(1)
 		elif self.left_face == ["O", "O", "O", "O"] and self.front_face == ["G", "G", "G", "G"] and self.right_face == ["R", "R", "R", "R"] and self.back_face == ["B", "B", "B", "B"] and self.down_face == ["W", "W", "W", "W"] and self.top_face == ["Y", "Y" , "Y" , "Y"]:
 			print("Solved")
+			print(self.moves)
 			return True
 			exit(1)
 		else:
@@ -260,19 +283,19 @@ Top Left Back to Top Left Front """
 def CharlesTruscottRubiks():
 #	item = RubiksState([])
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
-	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "B", "R"], ["W", "R", "B"], ["Y", "O", "B"], [])
+#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "B", "R"], ["W", "R", "B"], ["Y", "O", "B"], [])
 #	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
 #	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
-#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
+	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
-	moves = [lambda s: s.L(), lambda s: s.Linverse(), lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
+	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linverse(), lambda s: s.Linverse(), lambda s: s.R(), lambda s: s.U(), lambda s: s.D(), lambda s: s.F(),  lambda s: s.B() ]
 #	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.F2(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.B2(), lambda s: s.Binv()]
 #	print(state[0].moves)
 	for move in moves:
 		e = move(item)
 		state.append(e)
-#	state.popleft()
+	state.popleft()
 	c = 0
 #	print(state)
 	print("Charles Truscott Watters. My Rubik's cube solution Python algorithm.")
