@@ -148,6 +148,7 @@ Top Left Back to Top Left Front """
 		elcopy.append("U")
 		return RubiksState(ntlf.copy(), ntrf.copy(), tblf.copy(), tbrf.copy(), ntlb.copy(), tblb.copy(), ntrb.copy(), tbrb.copy(), elcopy)
 	def U2(self):
+		""" Top Right Back set as Top Left Front. Top Left Front set as Top Right Back. Top Right Front set as Top Left Back. Top Left Back set as Top Right Front """
 		pass
 	def Uinverse(self):
 		""" Top Right Front set as Top Left Front. Top Left Front set as Top Left Back. Top Left Back set as Top Right Back. Top Right Back set as Top Right Front """
