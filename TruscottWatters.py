@@ -223,18 +223,8 @@ Top Left Back to Top Left Front """
 	def B2(self):
 		pass
 	def Binverse(self):
+		# here
 		pass
-#		return RubiksState(elcopy)
-#	def B2(self):
-#		elcopy = self.moves.copy()
-#		elcopy.append("B2")
-#		return RubiksState(elcopy)
-#		pass
-#	def Binv(self):
-#		elcopy = self.moves.copy()
-#		elcopy.append("B inverse")
-#		return RubiksState(elcopy)
-#		pass
 		
 	def is_solved(self):
 		if self.left_face == ["O", "O", "O", "O"] and self.front_face == ["G", "G", "G", "G"] and self.right_face == ["R", "R", "R", "R"] and self.back_face == ["B", "B", "B", "B"] and self.top_face == ["W", "W", "W", "W"] and self.down_face == ["Y", "Y" , "Y" , "Y"]:
