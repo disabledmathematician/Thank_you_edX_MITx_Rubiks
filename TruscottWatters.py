@@ -69,6 +69,7 @@ Top Left Back to Top Left Front """
 		# tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
 		return RubiksState(ntlf.copy(), ttrf.copy(), nblf.copy(), tbrf.copy(), ntlb.copy(), nblb.copy(), ttrb.copy(), tbrb.copy(), elcopy)
 	def L2(self):
+		""" Bottom Left Back to Top Left Front. Top Left Front to Bottom Left Back. Bottom Left Front to Top Left Back. Top Left Back to Bottom Left Front """
 		pass
 	def Linverse(self):
 				""" Top Left Front takes on the value of Bottom Left Front. Top Left Back takes on Top Left Front. Bottom Left Back Takes on Top Left Back. Bottom Left Front takes on Bottom Left Back """
@@ -117,6 +118,7 @@ Top Left Back to Top Left Front """
 		elcopy.append("R")
 		return RubiksState(ttlf.copy(), ntrf.copy(), tblf.copy(), nbrf.copy(), ttlb.copy(), tblb.copy(), ntrb.copy(), nbrb.copy(), elcopy)
 	def R2(self):
+		""" Bottom Right Back to Top Right Front. Top Right Front to Bottom Right Back. Top Right Back to Bottom Right Front. Bottom Right Front to Top Right Back """
 		pass
 	def Rinverse(self):
 		""" Top Right Front set as Bottom Right Front. Bottom Right Front set as Bottom Right Back. Bottom Right Back set as Top Right Back. Top Right Back set as Top Right Front """
