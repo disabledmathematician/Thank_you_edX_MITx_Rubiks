@@ -223,7 +223,7 @@ Top Left Back to Top Left Front """
 	def B2(self):
 		pass
 	def Binverse(self):
-		# here
+		""" Bottom Left Back set as Top Left Back. Top Left Back set as Top Right Back. Top Right Back set as Bottom Right Back. Bottom Right Back set as Bottom Left Back """
 		pass
 		
 	def is_solved(self):
