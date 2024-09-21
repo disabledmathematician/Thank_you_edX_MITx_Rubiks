@@ -1,14 +1,12 @@
 #pylint:disable=W0613
 from queue import deque
 
-# August 30, International Day of the Disappeared
-
 """ Charles Truscott Watters, developing my own algorithm to solve the Rubik's cube 2 x 2 Byron Bay NSW 2481. Thank you John Flynn Hospital and Byron Bay Hospital. Thank you MITx, MIT OCW and Harvard CCE """
 
 """ Thank you Byron Central Hospital Tuckeroo. Thank you Eric Grimson, John Guttag and Ana Bell and all at MITx """
 
 
-#  Theta c to the n
+
 
 """ Top Left Front, Top Right Front, Bottom Left Front, Bottom Right Front, Top Left Back, Top Right Back, Bottom Right Back, Bottom Left Back """
 class RubiksState(object):
@@ -153,7 +151,7 @@ Top Left Back to Top Left Front """
 		nbrb[0], nbrb[1], nbrb[2] = ttrf[0], ttrf[1], ttrf[2]
 		nbrf[0], nbrf[1], nbrf[2] = ttrb[0], ttrb[1], ttrb[2]
 		ntrb[0], ntrb[1], ntrb[2] = tbrf[0], tbrf[1], tbrf[2]
-		# Need code review and auditing for the coordinate reference. May not be the righr indices 0 as top 1 as side and 2 as side
+
 		elcopy = self.moves.copy()
 		elcopy.append("R2")
 		return RubiksState(ttlf.copy(), ntrf.copy(), tblf.copy(), nbrf.copy(), ttlb.copy(), tblb.copy(), ntrb.copy(), nbrb.copy(), elcopy)
@@ -368,15 +366,12 @@ Top Left Back to Top Left Front """
 def CharlesTruscottRubiks():
 #	item = RubiksState([])
 # tlf, trf, blf, brf, tlb, blb, trb, brb, moves):
-#	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["G", "Y", "O"], ["G", "Y", "R"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
-#	item = RubiksState(["W", "B", "O"], ["W", "R", "G"], ["B", "Y", "R"], ["G", "O", "Y"], ["W", "G", "O"], ["G", "Y", "R"], ["W", "R", "B"], ["B", "O", "Y"], [])
-#	item = RubiksState(["W", "O", "G"], ["W", "O", "B"], ["O", "G", "Y"], ["Y", "B", "R"], ["W", "B", "R"], ["O", "B", "Y"], ["W", "G", "R"], ["Y", "R", "B"], [])
 	item = RubiksState(["W", "O", "G"], ["W", "R", "G"], ["Y", "O", "G"], ["Y", "R", "G"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "B"], ["Y", "R", "B"], [])
 	state = deque([])
 	state.append(item)
 	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linverse(),  lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinverse(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.F(),  lambda s: s.F2(), lambda s: s.B() ]
 #	moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.F2(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.B2(), lambda s: s.Binv()]
-#	print(state[0].moves)
+
 	for move in moves:
 		e = move(item)
 		state.append(e)
@@ -400,6 +395,5 @@ def CharlesTruscottRubiks():
 				exit(1)
 		c += 1
 
-# Quite a while to go yet. Need to check all those matrix transformations. Can refactor over the coming few months, now September 2024 - where I have spent the majority of the last year scheduled in mental hospitals under the Mental Health Act NSW 2007
 
 CharlesTruscottRubiks()
