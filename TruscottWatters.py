@@ -6,7 +6,9 @@ from queue import deque
 """ Thank you Byron Central Hospital Tuckeroo. Thank you Eric Grimson, John Guttag and Ana Bell and all at MITx """
 
 
+# Need to review and refactor all class attributes and methods, to make sure they are sensible for solving the array of cubits
 
+# 21st September 2024
 
 """ Top Left Front, Top Right Front, Bottom Left Front, Bottom Right Front, Top Left Back, Top Right Back, Bottom Right Back, Bottom Left Back """
 class RubiksState(object):
